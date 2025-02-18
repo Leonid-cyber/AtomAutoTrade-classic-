@@ -1,0 +1,63 @@
+/* Utils */
+// _utils Требуются только при разработке для удобства работы
+.none {
+  display: none !important;
+}
+// Визуально не виден нужен для скрин ридеров
+// чтобы читать, то чего не должен видеть обычный пользователь
+// например заголовок только для скрин ридера
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+.bg-red {
+  background-color: red;
+}
+a[href*="#"],
+a[href=""] {
+  box-shadow: 0px 0px 5px red;
+  // background-color: rgb(255, 202, 202);
+}
+a[href*="#"],
+a[href=""] {
+  &:hover::before {
+    // Position
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    // Block model
+    display: block;
+    padding: 0.5rem;
+    width: 6rem;
+    height: 2rem;
+    // Typography
+    color: var(--basic-color);
+    text-align: center;
+    font-size: 1rem;
+    line-height: 100%;
+    // Decor
+    background-color: gold;
+    border: 4px dotted red;
+    // Other
+    content: "Нет адреса для ссылки!";
+    transform: translate(-50%, -50%);
+  }
+}
+img[src=""] {
+  background-color: cadetblue;
+}
+// *{
+//     outline: 1px solid red;
+// }

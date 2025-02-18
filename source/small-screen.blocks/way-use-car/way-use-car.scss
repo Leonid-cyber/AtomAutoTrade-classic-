@@ -1,0 +1,18 @@
+@media #{$media-rule-for-small-screen} {
+  .way-use-car {
+    // Block model
+    flex-direction: column;
+
+    &__item {
+      // Block model
+      padding: func-px-to-rem(40, 32);
+      // Decor
+      // border-radius: 2.5rem;
+
+      &-image {
+        // Block model
+        width: func-px-to-rem(64);
+      }
+    }
+  }
+}

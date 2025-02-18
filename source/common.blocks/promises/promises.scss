@@ -1,0 +1,44 @@
+.promises {
+  // Block model
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  // grid-auto-rows: 1fr;
+  // gap: 1.45rem;
+  gap: 1.5rem;
+  // justify-items: center;
+  justify-items: stretch;
+  justify-content: space-between;
+  // Other
+  counter-reset: promise-counter 0;
+
+  // убрать у блока promise и добавить этот элемент
+  // &__counter {
+  //   // Other
+  //   counter-reset: promise-counter 0;
+  // }
+  // &--counter::before {
+  //   // Position
+  //   position: absolute;
+  //   // top: 2.3rem;
+  //   // top: 2rem;
+  //   top: 1.55rem;
+  //   right: 2.5rem;
+  //   // Block model
+  //   display: block;
+  //   // Typography
+  //   content: "" counter(promise1-counter) "";
+  //   color: #eaeaea;
+  //   font-size: 3.12rem;
+  //   font-family: RF Dewi Expanded;
+  //   font-weight: 900;
+  // }
+
+  &--double-column {
+    // Block model
+    // grid-template-columns: 1fr 1fr;
+    // grid-template-rows: 1fr;
+    // justify-items: stretch;
+    background-color: red;
+  }
+}

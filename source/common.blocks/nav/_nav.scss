@@ -1,0 +1,115 @@
+.nav {
+    // Block model
+    // margin-top: 0.95rem;
+    padding-left: calc(((100% - 1116px) / 2));
+    display: flex;
+    gap: 1.88rem;
+    // Decor
+    // border-top: 2px solid #F3F3F3;
+
+    &__wrapper-links {
+        // Position
+        position: relative;
+    }
+        &__link {
+            // Block model
+            display: block;
+            padding: 1.5rem 0rem;
+            // Typography
+            color: var(--text-color-second);
+            // Animation
+            transition: 0.2s ease-out all;
+
+            &:hover{
+                color: var(--basic-color);
+            }
+        }
+        &__link-with-popup {
+            // Position
+            position: relative;
+            // Block model
+            padding-right: 1.4rem;
+            
+            &::before{
+                // Position
+                position: absolute;
+                top: 50%;
+                right: 0%;
+                // Block model
+                width: 0.75rem;
+                height: 100%;
+                // Decor
+                background-image: url('../images/nav/__link/arrow-up.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center right;
+                // Animation
+                transition: 0.3s ease-out all;
+                // Other
+                content: '';
+                transform: translate(0%, -50%);
+            }
+
+            &:hover::before{
+                // Position
+                top: 0%;
+                // Other
+                transform: rotate(180deg);
+            }
+        }
+
+    &__popup-menu-wrapper {
+        // Position
+        position: absolute;
+        top: 100%;
+        // bottom: -100%;
+        left: -2rem;
+        z-index: -1;
+        overflow: hidden;
+
+    }
+        &__popup-menu {
+            // Block model
+            margin-top: -100%;
+            width: max-content;
+            padding: 1.5rem 2.55rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.87rem;
+            // Decor
+            background-color: var(--text-color-third);
+            border-radius: 0 0 0.88rem 0.88rem;
+            // Animation
+            transition: 0.5s all ease-out;
+
+            &--open {
+                // Block model
+                margin-top: 0;
+            }
+
+            &-link {
+                // Block model
+                display: block;
+                // Typography
+                font-size: 0.88rem;
+                color: var(--text-color-second);
+                text-transform: uppercase;
+                // Animation
+                transition: 0.3s all ease;
+
+                &:hover {
+                    // Animation
+                    transform: translateX(3%);
+                    filter:brightness(0.6);
+                }
+            }
+
+        }  
+}
+
+// Position
+// Block model
+// Typography
+// Decor
+// Animation
+// Other

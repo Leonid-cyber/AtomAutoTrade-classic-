@@ -1,0 +1,26 @@
+.main-japan {
+  // Block model
+  padding-bottom: func-px-to-rem(80);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__wrapper-text-block {
+    // Block model
+    flex: 0 0 35%;
+  }
+  &__wrapper-image {
+    // Block model
+    flex: 0 0 57.4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__image {
+    // Block model
+    width: 100%;
+    object-fit: contain;
+    // Decor
+    border-radius: 2.5rem;
+  }
+}

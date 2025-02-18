@@ -1,0 +1,34 @@
+// @media screen and (min-width: $large-screen) and (max-width: $extra-large-screen) {
+@media #{$media-rule-for-large-screen} {
+  .categories {
+    &__item {
+      --size-image-flag: 3rem;
+      // Block model
+      min-height: 20.25rem;
+      padding: 2rem 1.5rem 2rem 2rem;
+    }
+
+    &__title {
+      // Typography
+      font-size: 1.38rem;
+    }
+
+    &__japan {
+      // Decor
+      background-size: 122%, var(--size-image-flag);
+      background-position: left -5% bottom 19%, var(--position-image-flag);
+    }
+
+    &__china {
+      // Decor
+      background-size: 126%, var(--size-image-flag);
+      background-position: left -13% bottom 20%, var(--position-image-flag);
+    }
+
+    &__korea {
+      // Decor
+      background-size: 114%, var(--size-image-flag);
+      background-position: left -63% bottom 20%, var(--position-image-flag);
+    }
+  }
+}

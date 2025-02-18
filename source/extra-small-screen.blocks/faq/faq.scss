@@ -1,0 +1,70 @@
+@media #{$media-rule-for-extra-small-screen} {
+  .faq {
+    // Block model
+    flex-direction: column;
+    flex-wrap: nowrap;
+    // gap: func-px-to-rem(24);
+
+    &__title {
+      // Block model
+      padding-bottom: func-px-to-rem(32);
+    }
+    &__questions {
+      // Block model
+      width: 100%;
+    }
+    &__question-wrapper {
+      // Block model
+      padding: func-px-to-rem(24, 20);
+      min-height: func-px-to-rem(119);
+
+      &::after {
+        // Position
+        top: func-px-to-rem(48);
+        right: func-px-to-rem(36);
+      }
+
+      &--open {
+        // Block model
+        gap: func-px-to-rem(14);
+      }
+    }
+
+    &__question {
+      // Block model
+      width: 76.8%;
+      // Decor
+      font-size: 0.88rem;
+    }
+
+    &__contact {
+      // Position
+      position: relative;
+      // Block model
+      display: block;
+      margin-top: func-px-to-rem(24);
+      width: 100%;
+      padding: func-px-to-rem(32, 20);
+
+      &-title {
+        // Typography
+        font-size: 1.25rem;
+      }
+      &-wrapper-buttons {
+        // Block model
+        justify-content: space-between;
+        gap: func-px-to-rem(4);
+      }
+      &-button {
+        // Block model
+        min-height: 2.88rem;
+        flex-wrap: nowrap;
+        padding: func-px-to-rem(14, 15);
+        &-text {
+          // Typography
+          font-size: 0.88rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,519 @@
+.button-base {
+  // Block model
+  box-sizing: border-box;
+  // width: 100%;
+  // height: 100%;
+  // padding: 0.75rem;
+  // padding: 0.88rem 1.25rem;
+  padding: 0.875rem 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  // Decor
+  background-color: var(--basic-color);
+  border: none;
+  border-radius: 0.62rem;
+
+  &:hover {
+    // Decor
+    background-color: color-mix(in oklab, var(--basic-color) 80%, black 20%);
+    cursor: pointer;
+    // Animation
+    transition: 0.2s ease-in all;
+  }
+  &:active {
+    /* Decor */
+    transform: scale(102%);
+    /* Animation */
+    transition: 0.1s;
+    background-color: #36175e;
+  }
+
+  &__image {
+    // Block model
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 1.25rem;
+    // box-shadow: 0 0 5px black;
+  }
+  &__text {
+    // Typography
+    color: var(--text-color-third);
+    font-family: "Museo Sans Cyrl 700";
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+}
+
+// .button {
+//   // Block model
+//   box-sizing: border-box;
+//   padding: 0.88rem 1.25rem;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   gap: 0.625rem;
+//   // Decor
+//   background-color: var(--basic-color);
+//   border: none;
+//   border-radius: 0.62rem;
+
+//   &:hover {
+//     // Decor
+//     background-color: color-mix(in oklab, var(--basic-color) 80%, black 20%);
+//     cursor: pointer;
+//     // Animation
+//     transition: 0.2s ease-in all;
+//   }
+//   &:active {
+//     /* Decor */
+//     transform: scale(102%);
+//     /* Animation */
+//     transition: 0.1s;
+//     background-color: #36175e;
+//   }
+
+//   &__image {
+//     // Position
+//     position: relative;
+//     // Block model
+//     flex-shrink: 0;
+//     flex-grow: 0;
+
+//     &--mod-1 {
+//       // Block model
+//       width: 1.25rem;
+
+//       &::before {
+//         // Position
+//         position: absolute;
+//         right: 50%;
+//         top: 50%;
+//         // Block model
+//         display: block;
+//         width: 100%;
+//         aspect-ratio: 1;
+//         content: "";
+//         // Decor
+//         transform: translate(50%, -50%);
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         background-image: url('data:image/svg+xml,<svg    width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(%23clip0_85_95)"><path d="M21.6198 20.2349C20.9748 20.2299 20.3798 19.9649 19.9398 19.4999L11.7399 10.84L9.86492 12.72L10.0099 12.865C10.4099 13.265 10.4099 13.92 10.0099 14.32C9.60995 14.72 8.95993 14.72 8.55994 14.32L4.06 9.82503C3.66001 9.42004 3.66001 8.77005 4.06 8.37007C4.26502 8.17006 4.52499 8.07008 4.79 8.07008C5.05001 8.06508 5.30999 8.16508 5.515 8.37007L5.65999 8.51505L12.2799 1.90015L12.1349 1.75516C11.7299 1.35017 11.7299 0.700152 12.1349 0.300163C12.3349 0.100184 12.5949 0.000178901 12.8599 0.000178901C13.1199 -0.00482593 13.3799 0.0951789 13.5849 0.300163L18.0798 4.7951C18.4798 5.19512 18.4798 5.85011 18.0798 6.2501C17.6798 6.65009 17.0298 6.65009 16.6298 6.2501L16.4799 6.10011L14.6049 7.98009L23.2548 16.18C23.7248 16.615 23.9897 17.2099 23.9997 17.85C24.0098 18.4949 23.7697 19.0949 23.3148 19.5499C22.8698 19.9949 22.2848 20.2399 21.6548 20.2399C21.6498 20.2399 21.6435 20.2387 21.6373 20.2374C21.631 20.2362 21.6248 20.2349 21.6198 20.2349Z" fill="white" /><path d="M15.5498 23.6949H0.499994C0.225003 23.6949 0 23.4699 0 23.1949C0 22.9199 0.225003 22.6949 0.499994 22.6949H1.41499V22.2499C1.41499 21.2899 2.19498 20.5099 3.15496 20.5099H3.21496V19.0649C3.21496 18.104 3.99397 17.325 4.95495 17.325H11.0848C12.0499 17.325 12.8299 18.105 12.8299 19.0649V20.5099H12.8898C13.8548 20.5099 14.6348 21.2899 14.6348 22.2499V22.6949H15.5498C15.8248 22.6949 16.0498 22.9199 16.0498 23.1949C16.0498 23.4699 15.8248 23.6949 15.5498 23.6949Z" fill="white" /></g><defs><clipPath id="clip0_85_95"><rect width="24" height="24" fill="white" /></clipPath></defs></svg>');
+//       }
+//     }
+//     &--mod-1::before {
+//     }
+//   }
+//   &__text {
+//     // Typography
+//     color: var(--text-color-third);
+//     font-family: "Museo Sans Cyrl 700";
+//     font-size: 1rem;
+//     text-transform: uppercase;
+//   }
+// }
+
+// Отдельная ветка для текста
+// Отдельная для паддингов
+
+// .button-base {
+//   background-color: red;
+//   // Position
+//   position: relative;
+//   // Block model
+//   width: 100%;
+//   height: 100%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   // gap: 10px;
+//   gap: clamp(5px, 10px, 10px);
+//   // padding-left: 12px;
+//   // padding-right: 12px;
+
+//   // &__image {
+//   //   // Position
+//   //   // position: absolute;
+//   //   // Block model
+//   //   // padding-right: 10px;
+//   //   // width: 1px;
+
+//   //   &--tiny {
+//   //     // Block model
+//   //     width: 20px;
+//   //     padding-top: 17px;
+//   //     padding-bottom: 17px;
+//   //   }
+
+//   //   &--large {
+//   //     // Block model
+//   //     width: 24px;
+//   //     padding-top: 12px;
+//   //     padding-bottom: 12px;
+//   //   }
+//   // }
+
+//   // &__text {
+//   //   // Block model
+//   //   padding-top: 17.5px;
+//   //   padding-bottom: 17.5px;
+//   //   // Typography
+//   //   color: rgb(255, 255, 255);
+//   //   font-family: "Museo Sans Cyrl 700";
+//   //   font-size: 1rem;
+//   //   text-transform: uppercase;
+//   //   // font-size: 0.94rem;
+//   //   // font-size: 0.88rem;
+//   //   // font-size: 0.88rem;
+//   //   // font-size: 0.88rem;
+//   //   @media #{$media-rule-for-large-screen} {
+//   //     padding-top: 15px;
+//   //     padding-bottom: 15px;
+//   //   }
+//   //   @media #{$media-rule-for-medium-screen} {
+//   //     padding-top: 14.5px;
+//   //     padding-bottom: 14.5px;
+//   //   }
+//   //   @media #{$media-rule-for-small-screen} {
+//   //     padding-top: 15.5px;
+//   //     padding-bottom: 15.5px;
+//   //   }
+//   //   @media #{$media-rule-for-extra-small-screen} {
+//   //     padding-top: 14.5px;
+//   //     padding-bottom: 14.5px;
+//   //   }
+
+//   //   &--tiny-padding {
+//   //     // Block model
+//   //     padding-top: 14.5px;
+//   //     padding-bottom: 14.5px;
+
+//   //     @media #{$media-rule-for-large-screen} {
+//   //       padding-top: 15px;
+//   //       padding-bottom: 15px;
+//   //     }
+//   //     @media #{$media-rule-for-medium-screen} {
+//   //       padding-top: 14.5px;
+//   //       padding-bottom: 14.5px;
+//   //     }
+//   //     @media #{$media-rule-for-small-screen} {
+//   //       padding-top: 15.5px;
+//   //       padding-bottom: 15.5px;
+//   //     }
+//   //     @media #{$media-rule-for-extra-small-screen} {
+//   //       padding-top: 14.5px;
+//   //       padding-bottom: 14.5px;
+//   //     }
+//   //   }
+//   // }
+
+//   &--padding-var-1 {
+//     // 17.5 18 18 18.5 18.5
+//   }
+//   &--padding-var-2 {
+//     // 17.5 18 18.5 18.5 18.5
+//   }
+//   &--padding-var-3 {
+//     // 17.5 18 18.5 15.5 15.5
+//   }
+//   &--padding-var-4 {
+//     // 12 12 12 12 12
+//   }
+//   &--padding-var-5 {
+//     // 14.5 15 14.5 15.5 14.5
+//   }
+//   &--padding-var-6 {
+//     // 14.5 14.5 15.5 14.5 10
+//   }
+
+//   &--min-height-1 {
+//     // 54 54 54 54 54
+//   }
+//   &--min-height-2 {
+//     // 54 54 54 48 48
+//   }
+//   &--min-height-3 {
+//     // 48 48 46 48 46
+//   }
+//   &--min-height-4 {
+//     // 48 48 48 46 40
+//   }
+
+//   &__image {
+//     &--var-1 {
+//       // 20 20 18 20 18
+//     }
+//     &--var-2 {
+//       // 28.59 28.59 28.59 28.59 28.59
+//     }
+//     &--var-3 {
+//       // 24 24 20 20 20
+//     }
+//     &--var-4 {
+//       // 20 20 18 20 20
+//     }
+//   }
+
+//   &__text {
+//     &--var-1 {
+//       // 1 0.94 0.88 0.88 0.88
+//     }
+
+//     &--var-2 {
+//       // 1 0.94 0.94 0.88 0.88
+//     }
+
+//     &--var-3 {
+//       // 1 1 0.88 0.88 --
+//     }
+//   }
+// }
+
+// .button-base {
+//     // Block model
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     // padding: 0.88rem 1.25rem 0.88rem 3.43rem;
+//     padding: 0.88rem 1.25rem;
+//     // padding: 0.7rem 1.15rem;
+//     // padding-right: 0.5rem;
+//     min-height: 3rem;
+//     // Decor
+//     background-color: var(--basic-color);
+//     border: none;
+//     border-radius: 0.63rem;
+
+//     &--auction{
+//         padding: 0.7rem 1.25rem;
+//     }
+
+//     &--full-width {
+//         width: 100%;
+//     }
+
+//     &--large-height {
+//         height: 3.35rem;
+//     }
+
+//     &--large-min-height {
+//         min-height: 3.35rem;
+//     }
+
+//     &--no-padding {
+//         padding: 0;
+//     }
+
+//     &:hover{
+//         // Decor
+//         background-color: color-mix(in oklab, var(--basic-color) 80%, black 20%);
+//         cursor: pointer;
+//         // Animation
+//         transition: 0.2s ease-in all;
+//     }
+
+//     &:active{
+//         /* Decor */
+//         transform: scale(100%);
+//         /* Animation */
+//         transition: 0.1s;
+//         background-color: #36175E;
+//     }
+
+//     &__image {
+//         // Block model
+//         display: inline;
+//         padding-right: 0.7rem;
+//         width: 1.2rem;
+
+//         &--large-size{
+//             width: 1.5rem;
+//             // width: 1.3rem;
+//         }
+//         &--only-image{
+//             // Block model
+//             // position: absolute;
+//             display: block;
+//             width: 1.05rem;
+//             padding-right: 0;
+//             // Decor
+//             transform: scale(148%);
+//         }
+//         &--only-tiny-image{
+//             // Block model
+//             // position: absolute;
+//             display: block;
+//             width: 0.7rem;
+//             padding-right: 0;
+//             // Decor
+//             transform: scale(200%);
+//         }
+//     }
+
+//     &__text{
+//         // Typography
+//         color: rgb(255, 255, 255);
+//         font-family: 'Museo Sans Cyrl 700';
+//         font-size: 1rem;
+//         line-height: 1.19rem;
+//         text-transform: uppercase;
+//         // background-color: gold;
+//     }
+// }
+
+// .button-base {
+//     // Block model
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     gap: 0.65rem;
+//     padding: 12px 20px;
+//     // Decor
+//     background-color: var(--basic-color);
+//     border: none;
+//     border-radius: 0.63rem;
+
+//     &--small-height {
+//         min-height: 48px;
+//     }
+
+//     &--large-height{
+//         min-height: 54px;
+//     }
+
+//     &--full-width {
+//         // Block model
+//         width: 100%;
+//     }
+
+//     &-small-image{
+
+//     }
+
+//     &-large-image{
+
+//     }
+
+//     &__image {
+//         // Block model
+//         // display: inline-block;
+//         // width: 1.2rem;
+//         // width: 20px;
+
+//         &--large-size {
+//             // Block model
+//             // width: 1.5rem;
+//             width: 24px;
+//         }
+//         &--sall-size {
+//             width: 20px;
+//         }
+//     }
+
+//     &__text {
+//         // Position
+//         position: relative;
+//         // Block model
+//         padding-left: 2.2rem;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         // Typography
+//         color: rgb(255, 255, 255);
+//         font-family: 'Museo Sans Cyrl 700';
+//         font-size: 1rem;
+//         text-transform: uppercase;
+//     }
+
+//     // &--auction{
+//     //     padding: 0.7rem 1.25rem;
+//     // }
+
+//     // &--full-width {
+//     //     width: 100%;
+//     // }
+
+//     // &--large-height {
+//     //     height: 3.35rem;
+//     // }
+
+//     // &--large-min-height {
+//     //     min-height: 3.35rem;
+//     // }
+
+//     // &--no-padding {
+//     //     padding: 0;
+//     // }
+
+//     // &:hover{
+//     //     // Decor
+//     //     background-color: color-mix(in oklab, var(--basic-color) 80%, black 20%);
+//     //     cursor: pointer;
+//     //     // Animation
+//     //     transition: 0.2s ease-in all;
+//     // }
+
+//     // &:active{
+//     //     /* Decor */
+//     //     transform: scale(100%);
+//     //     /* Animation */
+//     //     transition: 0.1s;
+//     //     background-color: #36175E;
+//     // }
+
+//     // &__image {
+//     //     // Block model
+//     //     display: inline;
+//     //     padding-right: 0.7rem;
+//     //     width: 1.2rem;
+
+//     //     &--large-size{
+//     //         width: 1.5rem;
+//     //         // width: 1.3rem;
+//     //     }
+//     //     &--only-image{
+//     //         // Block model
+//     //         // position: absolute;
+//     //         display: block;
+//     //         width: 1.05rem;
+//     //         padding-right: 0;
+//     //         // Decor
+//     //         transform: scale(148%);
+//     //     }
+//     //     &--only-tiny-image{
+//     //         // Block model
+//     //         // position: absolute;
+//     //         display: block;
+//     //         width: 0.7rem;
+//     //         padding-right: 0;
+//     //         // Decor
+//     //         transform: scale(200%);
+//     //     }
+//     // }
+
+//     // &__text{
+//     //     // Typography
+//     //     color: rgb(255, 255, 255);
+//     //     font-family: 'Museo Sans Cyrl 700';
+//     //     font-size: 1rem;
+//     //     line-height: 1.19rem;
+//     //     text-transform: uppercase;
+//     //     // background-color: gold;
+//     // }
+// }
+
+// Картинка вставлена через псевдоэлемент
+// Не подпйдет потомучто картинку нельзя вставить отдельно
+
+/*
+whatsapp{
+    width: 24px;
+    height 24px;
+    // padding:15px
+    &>img {
+        width: 24px;
+        object-fit: contain;
+    }
+}
+*/

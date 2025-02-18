@@ -1,0 +1,76 @@
+// Приоритет блоков в выходном CSS
+// Ниже - выше приоритет
+// @import "common.blocks/consultation/consultation.scss";
+// order-a-purchase
+// field-form
+
+// ШАБЛОН
+// @import "common.blocks/+/+.scss";
+// @import "large-screen.blocks/+/+.scss";
+// @import "medium-screen.blocks/+/+.scss";
+// @import "small-screen.blocks/+/+.scss";
+// @import "extra-small-screen.blocks/+/+.scss";
+
+// header
+@import "common.blocks/header/header.scss";
+@import "large-screen.blocks/header/header.scss";
+@import "medium-screen.blocks/header/header.scss";
+@import "small-screen.blocks/header/header.scss";
+@import "extra-small-screen.blocks/header/header.scss";
+
+// differences-in-methods
+@import "common.blocks/differences-in-methods/differences-in-methods.scss";
+@import "large-screen.blocks/differences-in-methods/differences-in-methods.scss";
+@import "medium-screen.blocks/differences-in-methods/differences-in-methods.scss";
+@import "small-screen.blocks/differences-in-methods/differences-in-methods.scss";
+@import "extra-small-screen.blocks/differences-in-methods/differences-in-methods.scss";
+
+// FAQ
+@import "common.blocks/faq/faq.scss";
+@import "large-screen.blocks/faq/faq.scss";
+@import "medium-screen.blocks/faq/faq.scss";
+@import "small-screen.blocks/faq/faq.scss";
+@import "extra-small-screen.blocks/faq/faq.scss";
+
+// car-sales-and-card
+// @import "common.blocks/car-sales-and-card/car-sales-and-card.scss";
+// @import "large-screen.blocks/car-sales-and-card/car-sales-and-card.scss";
+// @import "medium-screen.blocks/car-sales-and-card/car-sales-and-card.scss";
+// @import "small-screen.blocks/car-sales-and-card/car-sales-and-card.scss";
+// @import "extra-small-screen.blocks/car-sales-and-card/car-sales-and-card.scss";
+
+// documents
+// @import "common.blocks/documents/documents.scss";
+// @import "large-screen.blocks/documents/documents.scss";
+// @import "medium-screen.blocks/documents/documents.scss";
+// @import "small-screen.blocks/documents/documents.scss";
+// @import "extra-small-screen.blocks/documents/documents.scss";
+
+// description-method
+// car-cutting
+
+// promises
+// @import "common.blocks/promises/promises.scss";
+// @import "large-screen.blocks/promises/promises.scss";
+// @import "medium-screen.blocks/promises/promises.scss";
+// @import "small-screen.blocks/promises/promises.scss";
+// @import "extra-small-screen.blocks/promises/promises.scss";
+
+// text-block-with-button
+@import "common.blocks/text-block-with-button/text-block-with-button.scss";
+@import "large-screen.blocks/text-block-with-button/text-block-with-button.scss";
+@import "medium-screen.blocks/text-block-with-button/text-block-with-button.scss";
+@import "small-screen.blocks/text-block-with-button/text-block-with-button.scss";
+@import "extra-small-screen.blocks/text-block-with-button/text-block-with-button.scss";
+
+// order-a-purchase
+@import "common.blocks/order-a-purchase/order-a-purchase.scss";
+@import "large-screen.blocks/order-a-purchase/order-a-purchase.scss";
+@import "medium-screen.blocks/order-a-purchase/order-a-purchase.scss";
+@import "small-screen.blocks/order-a-purchase/order-a-purchase.scss";
+@import "extra-small-screen.blocks/order-a-purchase/order-a-purchase.scss";
+
+// visible-box
+@import "common.blocks/visible-box/visible-box.scss";
+@import "small-screen.blocks/visible-box/visible-box.scss";
+@import "extra-small-screen.blocks/visible-box/visible-box.scss";

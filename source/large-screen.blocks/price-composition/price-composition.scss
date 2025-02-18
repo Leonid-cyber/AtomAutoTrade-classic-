@@ -1,0 +1,161 @@
+@media #{$media-rule-for-large-screen} {
+
+.price-composition {
+    // Block model
+    // padding-top: 6.2rem;
+
+    &__text-block{
+        // Block model
+        // width: 100%;
+        // padding-bottom: 3.7rem;
+        // display: flex;
+        // justify-content: space-between;
+
+        &-title {
+            // Block model
+            // padding-top: 0.1rem;
+            // flex-grow: 0;
+            // flex-shrink: 0;
+            // width: 51%;
+            // // min-width: 41%;
+            // // max-width: 51%;
+            // // Typography
+            // font-size: 1.75rem;
+
+            // &--large-title {
+            //     // Block model
+            //     flex-grow: 0;
+            //     flex-shrink: 0;
+            //     min-width: initial;
+            //     max-width: initial;
+            //     width: 36%;
+            //     // Typography
+            //     font-size: 2rem;
+            // }
+        }
+        &-text {
+            // Block model
+            width: 40.2%;
+            // flex-grow: 0;
+            // flex-shrink: 0;
+            // width: 34%;
+
+            // &--large-width{
+            //     // Block model
+            //     width: 46%;
+            //     width: 47%;
+            // }
+        }
+    }
+
+    &__components {
+        // Block model
+        // display: grid;
+        // justify-content: space-between;
+        grid-template-columns: repeat(2, 31.5%);
+        // grid-template-rows: repeat(3, 1fr);
+        // gap: 1.5rem 0;
+        // // Decor
+        // background-repeat: no-repeat;
+        // background-position: center center;
+
+        &--background-japan {
+            // Decor
+            // background-image:
+            // url('../../images/price-composition/__columns/--japan/japan-car.png'),
+            // url('../../images/price-composition/circles.svg');
+            // background-size: 26.2rem, 62.7rem;
+            background-size: 47%, 113%;
+        }
+
+        &--background-china {
+            // // Decor
+            // background-image:
+            // url('../../images/price-composition/__columns/--china/china-car.png'),
+            // url('../../images/price-composition/circles.svg');
+            // background-size: 26.6rem, 56rem;
+        }
+        &--background-korea {
+            // // Decor
+            // background-image:
+            // url('../../images/price-composition/__columns/--korea/korea-car.png'),
+            // url('../../images/price-composition/circles.svg');
+            // background-size: 39.6rem, 56rem;
+        }
+    }
+        &__component {
+            // Block model
+            padding: 6.375rem 2rem 1.875rem;
+            // Decor
+            // border-radius: 1.3rem;
+            // background-color: var(--text-color-third);
+            // // background-image: url('../../images/price-composition/__columns/--china/china-car.png');
+            background-position: top 1.9rem left 1.9rem;
+            // background-position: top 1.9rem right 1.75rem;
+            // // background-size: 5.4rem;
+            // background-size: 3.7rem;
+            // background-repeat: no-repeat;
+
+            &--background-1 {
+                // Decor
+                // background-image: url('../../images/price-composition/__columns/1.jpg');
+            }
+            &--background-2 {
+                // Decor
+                // background-image: url('../../images/price-composition/__columns/2.jpg');
+            }
+            &--background-3 {
+                // Decor
+                // background-image: url('../../images/price-composition/__columns/3.jpg');
+            }
+            &--background-4 {
+                // Decor
+                // background-image: url('../../images/price-composition/__columns/4.jpg');
+            }
+            &--background-5 {
+                // Decor
+                // background-image: url('../../images/price-composition/__columns/5.jpg');
+            }
+            &--background-6 {
+                // Decor
+                // background-image: url('../../images/price-composition/__columns/6.jpg');
+            }
+
+            &-title {
+                // Block model
+                // padding-bottom: 1rem;
+                // width: 14rem;
+                // Typorgaphy
+                font-size: 1.06rem;
+                line-height: 140%;
+            }
+
+            &-text {
+                // Typorgaphy
+                font-size: 1rem;
+                line-height: 140%;
+                // // Block model
+                // width: 15.5rem;
+            }
+            
+        }
+            
+
+    // &__wrapper-images {
+    //     // Block model
+    //     padding-top: 1.4rem;
+    //     display: grid;
+    //     grid-template-columns: repeat(3, 1fr);
+    //     column-gap: 1.5rem;
+    // }
+    //     &__image {
+    //         // Block model
+    //         width: 100%;
+    //         height: 100%;
+    //         object-fit: contain;
+    //         // Decor
+    //         border-radius: 2.5rem;
+    //     }
+}
+
+}

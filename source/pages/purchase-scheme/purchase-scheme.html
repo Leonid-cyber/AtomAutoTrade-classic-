@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="re">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../images/icon-page/icon-page.ico"
+    type=”image/x-icon”>
+    <link rel="stylesheet" href="../../css/main.css" />
+    <title>Схема покупки</title>
+  </head>
+  <body>
+    @@include('../../common.blocks/header/header.html')
+
+    <section class="page section-wrapper section-wrapper--padding-top-small">
+      <div class="text-block">
+        <div class="title text-block__title">Простая схема покупки</div>
+        <div class="text text-block__text text-block__text--width-80">
+          Выбирайте из широкого ассортимента авто, оформляйте покупку и
+          получайте автомобиль прямо у дома. Всё просто и удобно!
+        </div>
+      </div>
+
+      @@include('../../common.blocks/purchase-cheme/_purchase-cheme.html')
+    </section>
+
+    <div class="page section-wrapper section-wrapper--padding-top-constant">
+      @@include('../../common.blocks/differences-in-methods/_purchase-scheme.html')
+    </div>
+
+    <div class="page section-wrapper section-wrapper--padding-top-constant">
+      @@include('../../common.blocks/categories/_general.html')
+    </div>
+
+    @@include('../../common.blocks/modal-order-similar/_help-with-choosing.html')
+    @@include('../../common.blocks/consultation/_purchase-scheme.html')
+    @@include('../../common.blocks/footer/footer.html')
+    <!-- outvisible -->
+    <!-- @@include('../../common.blocks/menu-popular/menu-popular.html') -->
+  </body>
+
+  <script src="../../js/main.js"></script>
+</html>

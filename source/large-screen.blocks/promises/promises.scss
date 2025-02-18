@@ -1,0 +1,9 @@
+@media #{$media-rule-for-large-screen} {
+
+  .promises {
+    // Block model
+    grid-template-rows: repeat(2, auto);
+    gap: 1.5rem;
+  }
+
+}

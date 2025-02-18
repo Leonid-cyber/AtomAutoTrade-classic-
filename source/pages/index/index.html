@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../images/icon-page/icon-page.ico"
+    type=”image/x-icon”>
+    <link rel="stylesheet" href="../../css/main.css" />
+    <title>Главная</title>
+  </head>
+  <body>
+    @@include('../../common.blocks/header/header.html')
+
+    <main class="page main">
+      <div class="main__wrapper-text-block">
+        <div class="text-block-with-button">
+          <h1 class="title text-block-with-button__title">
+            Автомобили из Японии, Южной Кореи и Китая под заказ
+          </h1>
+
+          <p
+            class="text text-block-with-button__text text-block-with-button__text--small-width"
+          >
+            Подберем, купим и доставим любой автомобиль из Японии, Южной Кореи и
+            Китая. Растаможим. Организуем доставку по России.
+          </p>
+
+          <button
+            class="button-base text-block-with-button__button"
+            data-open-modal-window="help-with-choosing"
+          >
+            <img
+              class="button-base__image text-block-with-button__button-image"
+              src="../../images/button-base/__loupe/loupe.svg"
+              alt=""
+            />
+
+            <span class="button-base__text text-block-with-button__button-text">
+              ПОДОБРАТЬ АВТО
+            </span>
+          </button>
+          <!-- @@include('../../common.blocks/button-base/_choosing.html') -->
+        </div>
+      </div>
+
+      <div
+        class="main__content-block-wrapper main__content-block-wrapper--main-image"
+      >
+        <div class="main__feature main__feature-flags">
+          <img
+            class="main__feature-flags-image"
+            src="../../images/main/__feature-image-flag/china.svg"
+            alt=""
+          />
+
+          <img
+            class="main__feature-flags-image"
+            src="../../images/main/__feature-image-flag/japan.svg"
+            alt=""
+          />
+
+          <img
+            class="main__feature-flags-image"
+            src="../../images/main/__feature-image-flag/korea.svg"
+            alt=""
+          />
+        </div>
+
+        <div class="main__feature main__feature-condition">
+          <img
+            class="main__feature-condition-image"
+            src="../../images/main/__feature-image/lup.svg"
+            alt=""
+          />
+
+          <span class="text main__feature-condition-text">
+            <b class="subtitle-second main__feature--text-bold">Прозрачные</b>
+            условия
+          </span>
+        </div>
+
+        <div class="main__feature main__feature-sanction">
+          <img
+            class="main__feature-sanction-image"
+            src="../../images/main/__feature-image/sanc.svg"
+            alt=""
+          />
+
+          <span class="text main__feature-sanction-text">
+            Привозим
+            <b class="subtitle-second main__feature--text-bold"
+              >даже санкционные</b
+            >
+            модели!
+          </span>
+        </div>
+
+        <img
+          class="main__main-image"
+          src="../../images/main/__main-image/cars.png"
+          alt="main-cars"
+        />
+      </div>
+    </main>
+
+    <div class="page section-wrapper">
+      @@include('../../common.blocks/categories/_general.html')
+    </div>
+
+    <section class="page section-wrapper">
+      <h2 class="title text-block__title">Почему Вам стоит выбрать нас?</h2>
+      <p class="text text-block__text">
+        Выбирая нас, вы получаете индивидуальный сервис, честные цены,
+        фиксированную комиссию, застрахованный транспорт и полное сопровождение
+        на каждом этапе.
+      </p>
+
+      <div class="section-wrapper__content promises promises--single-column">
+        <div class="visible-box promise">
+          <img
+            class="promise__image-large"
+            src="../../images/promise/__image/item1.svg"
+            alt="Item-image"
+          />
+
+          <div class="text-block">
+            <div class="title-second text-block__title-second">
+              Дорожим каждым клиентом
+            </div>
+            <div class="text text-block__text">
+              Персонализированный сервис. Получите экспертную помощь и
+              профессиональные рекомендации для выбора идеального авто.
+            </div>
+          </div>
+        </div>
+
+        <div class="visible-box promise">
+          <img
+            class="promise__image-large"
+            src="../../images/promise/__image/item2.svg"
+            alt="Item-image"
+          />
+
+          <div class="text-block">
+            <div class="title-second text-block__title-second">
+              Честная <br />
+              цена
+            </div>
+            <div class="text text-block__text">
+              Мы предлагаем вам авто по прозрачным ценам, избегая ненужных
+              переплат дилерам и автосалонам.
+            </div>
+          </div>
+        </div>
+
+        <div class="visible-box promise">
+          <img
+            class="promise__image-large"
+            src="../../images/promise/__image/item3.svg"
+            alt="Item-image"
+          />
+
+          <div class="text-block">
+            <div class="title-second text-block__title-second">
+              Фиксированная комиссия
+            </div>
+            <div class="text text-block__text">
+              Наша комиссия фиксирована и не меняется в зависимости от цены
+              автомобиля, объема услуг или метеорологических условий
+            </div>
+          </div>
+        </div>
+
+        <div class="visible-box promise">
+          <img
+            class="promise__image-large"
+            src="../../images/promise/__image/item4.svg"
+            alt="Item-image"
+          />
+
+          <div class="text-block">
+            <div class="title-second text-block__title-second">
+              Отсутствие <br />
+              рисков
+            </div>
+            <div class="text text-block__text">
+              Во время транспортировки вашего автомобиля он застрахован. За
+              процесс в России ответственность полностью на нашей компании.
+            </div>
+          </div>
+        </div>
+
+        <div class="visible-box promise">
+          <img
+            class="promise__image-large"
+            src="../../images/promise/__image/item5.svg"
+            alt="Item-image"
+          />
+
+          <div class="text-block">
+            <div class="title-second text-block__title-second">
+              Юридическая чистота
+            </div>
+            <div class="text text-block__text">
+              Автомобиль без пробега по РФ. Вы первый хозяин. Без проблем с
+              документами и при постановке на государственный учет.
+            </div>
+          </div>
+        </div>
+
+        <div class="visible-box promise">
+          <img
+            class="promise__image-large"
+            src="../../images/promise/__image/item6.svg"
+            alt="Item-image"
+          />
+
+          <div class="text-block">
+            <div class="title-second text-block__title-second">
+              Дополнитель­ный сервис
+            </div>
+            <div class="text text-block__text">
+              Обслужим, докупим необходимые запчасти, расходники и аксессуары.
+              Установим сигнализацию и мультимедиа.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page section-wrapper">
+      <div class="text-block">
+        <div class="title text-block__title">Популярные авто для ввоза</div>
+        <div class="text text-block__text text-block__text--width-80">
+          Исследуйте топ-выбор наших клиентов: доступные, надежные и стильные
+          авто, идеально соответствующие вашим желаниям и потребностям.
+        </div>
+      </div>
+
+      <div class="section-wrapper__content">
+        @@include('../../common.blocks/filters/_index.html')
+
+        <div class="slider-cards">
+          <div class="slider-cards__wrapper-items" data-slider-name="car-cards">
+            @@include('../../common.blocks/car-card/_car-card.html')
+          </div>
+
+          <div class="slider-cards__wrapper-for-controls">
+            <div class="slider-cards__indicator">
+              <div class="slider-cards__indicator-filling"></div>
+            </div>
+
+            <button
+              class="slider-cards__control slider-cards__control-previous"
+            ></button>
+
+            <button
+              class="slider-cards__control slider-cards__control-next"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page section-wrapper">
+      <div class="text-block">
+        <div class="title text-block__title">Простая схема покупки</div>
+        <div class="text text-block__text text-block__text--width-80">
+          Выбирайте из широкого ассортимента авто, оформляйте покупку и
+          получайте автомобиль прямо у дома. Всё просто и удобно!
+        </div>
+      </div>
+
+      @@include('../../common.blocks/purchase-cheme/_purchase-cheme.html')
+    </section>
+
+    <section class="page section-wrapper">
+      <div class="text-block">
+        <h3 class="title text-block__title">Авто наших клиентов</h3>
+        <div class="text text-block__text">
+          Встречайте выбор наших клиентов: от спортивных до семейных автомобилей
+          из Японии, Китая и Южной Кореи с конечной стоимостью на момент
+          передачи машины покупателю.
+        </div>
+      </div>
+
+      <form
+        class="filters filters--display-none"
+        name="car-filters"
+        data-filters-for-slider="rewiews"
+      >
+        <input
+          class="filters__input"
+          type="radio"
+          id="filters__rewiews"
+          name="type"
+          value="rewiews"
+          checked
+        />
+        <input
+          class="filters__input"
+          type="radio"
+          id="filters__rewiews"
+          name="country"
+          value="all"
+          checked
+        />
+      </form>
+
+      <div class="section-wrapper__content">
+        <div class="slider-cards">
+          <div class="slider-cards__wrapper-items" data-slider-name="rewiews">
+            @@include('../../common.blocks/car-card/_car-card.html')
+          </div>
+
+          <div class="slider-cards__wrapper-for-controls">
+            <div class="slider-cards__indicator">
+              <div class="slider-cards__indicator-filling"></div>
+            </div>
+
+            <button
+              class="slider-cards__control slider-cards__control-previous"
+            ></button>
+
+            <button
+              class="slider-cards__control slider-cards__control-next"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    @@include('../../common.blocks/consultation/_consultation-general.html')
+    @@include('../../common.blocks/footer/footer.html')
+    @@include('../../common.blocks/modal-order-similar/_modal-order-similar.html')
+    @@include('../../common.blocks/modal-order-similar/_help-with-choosing.html')
+    @@include('../../common.blocks/on-screen-navigation/on-screen-navigation.html')
+  </body>
+
+  <script src="../../js/main.js"></script>
+</html>

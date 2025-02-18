@@ -1,0 +1,209 @@
+// // NEW
+// .section-content {
+//   // Block model
+//   // padding-top: 60px;
+//   // 100 100 80 60 60
+//   // 60 60 60 40 40
+//   // text padding top
+//   // 20 20 16 16 16
+//   // content top
+//   // 40 32 32 32 32
+//   // 48 44 44 32 32
+//   &--padding {
+//     // Block model
+//     padding-top: 60px;
+//   }
+
+//   &--padding-full {
+//     // Block model
+//     padding-top: 100px;
+//   }
+
+//   &__title {
+//     // Block model
+//     padding-top: 40px;
+//   }
+
+//   &__text {
+//     padding-top: 20px;
+//   }
+
+//   // &__text-wrapper {
+//   //   // Block model
+//   //   padding-top: 40px;
+//   //   display: flex;
+//   //   gap: 1.25rem;
+//   //   flex-direction: column;
+//   //   margin-bottom: 2.95rem;
+//   // }
+//   // &__title {
+//   //   // Position
+//   //   position: relative;
+//   //   // Block model
+//   //   // width: 56rem;
+//   //   width: 70%;
+
+//   //   &-image {
+//   //     // Position
+//   //     position: absolute;
+//   //     top: 50%;
+//   //     left: 100%;
+//   //     // Block model
+//   //     width: 3.75rem;
+//   //     // Decor
+//   //     transform: translateY(-50%);
+//   //   }
+//   // }
+
+//   // &__text {
+//   //   // Block model
+//   //   width: 80%;
+//   //   // background-color: gold;
+//   //   // Typograhy
+//   //   text-wrap: balance;
+
+//   //   // &--short {
+//   //   // Block model
+//   //   // width: 55.4%;
+//   //   // Typograhy
+//   //   // background-color: gold;
+//   //   // text-wrap:initial;
+//   //   // }
+//   // }
+
+//   &__previous-page {
+//     // Block model
+//     display: block;
+//     width: max-content;
+//     padding: 0.45rem;
+//     padding-left: 1.7rem;
+//     // Typograhy
+//     color: var(--text-color-second);
+//     font-size: 1rem;
+//     font-family: "Museo Sans Cyrl 700";
+//     text-transform: uppercase;
+//     // Decor
+//     background-image: url("../../images/section-content/__previous-page/Arrow.svg");
+//     background-repeat: no-repeat;
+//     background-position: left 0.4rem center;
+//     // Animation
+//     transition: all 0.3s linear;
+
+//     &:hover {
+//       // Typograhy
+//       color: var(--basic-color);
+//     }
+//   }
+
+//   &__content-wrapper {
+//   }
+// }
+
+.section-content {
+  box-shadow: 0 0 30px red;
+  // Block model
+  padding-bottom: 6.25rem;
+  // padding-top: 6.2rem;
+  // background-color: goldenrod;
+
+  &--small-padding-bottom {
+    box-shadow: 0 0 30px red;
+    // Block model
+    padding-bottom: 3.7rem;
+    // box-shadow: 0 0 30px red;
+  }
+
+  &--small-padding-top {
+    // Block model
+    margin-top: -2.55rem;
+    box-shadow: 0 0 30px red;
+  }
+
+  &__text-wrapper {
+    box-shadow: 0 0 30px red;
+    // Block model
+    // width: 46rem;
+    // width: 56rem;
+    display: flex;
+    gap: 1.25rem;
+    flex-direction: column;
+    margin-bottom: 2.95rem;
+    // background-color: gold;
+
+    &--no-margin {
+      margin: 0;
+      box-shadow: 0 0 30px red;
+    }
+  }
+  &__title {
+    box-shadow: 0 0 30px red;
+    // Position
+    position: relative;
+    // Block model
+    // width: 56rem;
+    width: 70%;
+
+    &-image {
+      box-shadow: 0 0 30px red;
+      // Position
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      // Block model
+      width: 3.75rem;
+      // Decor
+      transform: translateY(-50%);
+    }
+  }
+
+  &__text {
+    box-shadow: 0 0 30px red;
+    // Block model
+    width: 80%;
+    // background-color: gold;
+    // Typograhy
+    text-wrap: balance;
+
+    // &--short {
+    // Block model
+    // width: 55.4%;
+    // Typograhy
+    // background-color: gold;
+    // text-wrap:initial;
+    // }
+  }
+
+  &__previous-page {
+    box-shadow: 0 0 30px red;
+    // Block model
+    display: block;
+    width: max-content;
+    padding: 0.45rem;
+    padding-left: 1.7rem;
+    // Typograhy
+    color: var(--text-color-second);
+    font-size: 1rem;
+    font-family: "Museo Sans Cyrl 700";
+    text-transform: uppercase;
+    // Decor
+    background-image: url("../../images/section-content/__previous-page/Arrow.svg");
+    background-repeat: no-repeat;
+    background-position: left 0.4rem center;
+    // Animation
+    transition: all 0.3s linear;
+
+    &:hover {
+      box-shadow: 0 0 30px red;
+      // Typograhy
+      color: var(--basic-color);
+    }
+  }
+
+  &__content-wrapper {
+    box-shadow: 0 0 30px red;
+  }
+}
+
+
+// padding-top 60px
+// padding-bottom 40px

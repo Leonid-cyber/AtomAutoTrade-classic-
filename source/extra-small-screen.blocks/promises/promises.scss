@@ -1,0 +1,9 @@
+@media #{$media-rule-for-extra-small-screen} {
+  .promises {
+    // Block model
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+    gap: 1.5rem;
+  }
+}

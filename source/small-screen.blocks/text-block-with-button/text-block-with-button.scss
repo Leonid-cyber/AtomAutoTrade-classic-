@@ -1,0 +1,41 @@
+@media #{$media-rule-for-small-screen} {
+  .text-block-with-button {
+    &__title {
+      // Block model
+      // padding-bottom: 1rem;
+      width: 80%;
+      width: 81%;
+      // background-color: gold;
+      // Typography
+      font-size: 1.25rem;
+    }
+    &__text {
+      // Block model
+      width: 95%;
+      width: 85%;
+      // background-color: gold;
+      padding-bottom: 1.4rem;
+      // Typography
+      // font-size: 0.88rem;
+      // line-height: 140%;
+
+      &--small-width {
+        // Block model
+        width: 80%;
+      }
+    }
+    &__button {
+      // Block model
+      width: 12.31rem;
+
+      &-image {
+        // Block model
+        width: 1.25rem;
+      }
+      &-text {
+        // Typography
+        font-size: 0.88rem;
+      }
+    }
+  }
+}

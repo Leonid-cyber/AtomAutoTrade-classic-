@@ -1,0 +1,34 @@
+@media #{$media-rule-for-small-screen} {
+  .description-method {
+    &__text-block {
+      // Block model
+      flex-direction: column;
+
+      &-title {
+        // Block model
+        width: 100%;
+      }
+      &-text {
+        // Block model
+        width: 100%;
+      }
+    }
+    &__wrapper-images {
+      // Block model
+      padding-top: func-px-to-rem(32);
+      grid-template-rows: auto auto;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-flow: dense;
+    }
+    &__image {
+      // Block model
+      border-radius: 1.88rem;
+
+      &--large-image {
+        grid-column: span 2;
+        // grid-column: 1 / 3;
+        // grid-row: 2 / 3;
+      }
+    }
+  }
+}

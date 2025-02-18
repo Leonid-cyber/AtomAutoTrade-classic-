@@ -1,0 +1,79 @@
+@media #{$media-rule-for-medium-screen} {
+
+.menu-popular {
+    // Block model
+    padding-top: 3.7rem;
+    padding-bottom: 4rem;
+
+    &__inner{
+        // Position
+        left: -0.7%;
+        // Block model
+        gap: 1.55rem;
+    }
+
+        &__logo {
+            // Block model
+            gap: 0.7rem;
+
+            &-link {
+                // Block model
+                width: 9.12rem;
+            }
+
+            &-text {
+                // Block model
+                width: 11.5rem;
+            }
+        }
+
+        &__content {
+            // Block model
+            gap: 5.95rem;
+
+            &-top {
+                // Block model
+                max-height: 16.94rem;
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: 4.35rem 4rem;
+                
+            }
+
+            &-bottom {
+                // Block model
+                gap: 4.3rem;
+            }
+        }
+
+            &__column {
+                // Block model
+                font-size: 1.12rem;
+                gap: 1.43rem;
+
+                &-link {
+                    // Typography
+                    font-size: 1.12rem;
+                }
+            }
+
+
+    &__contacts-column {
+        // Block model
+        gap: 1.6rem;
+    }
+
+        &__contact {
+            // Typography
+            font-size: 1.12rem;
+        }
+
+    &__close-menu {
+        // Position
+        position: absolute;
+        top: -10.1%;
+    }
+
+}
+
+}

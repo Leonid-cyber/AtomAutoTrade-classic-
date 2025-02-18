@@ -1,0 +1,61 @@
+@media #{$media-rule-for-medium-screen} {
+  .order-a-purchase {
+    // Block model
+    padding: 3rem 2.0625rem;
+
+    &__title {
+      // Block model
+      padding-bottom: 1rem;
+      width: 49%;
+    }
+
+    &__text {
+      // Block model
+      width: 49%;
+    }
+
+    &__button {
+      // Block model
+      max-width: 13rem;
+
+      &--large-width {
+        // Block model
+        // max-width: 19rem;
+        max-width: 19.1rem;
+        width: 19.1rem;
+      }
+
+      &-image {
+        // Block model
+        width: 1.125rem;
+      }
+      &-text {
+        // Typography
+        font-size: 0.88rem;
+      }
+    }
+
+    &__image-japan {
+      // Position
+      right: 1.2%;
+      bottom: 14%;
+      // Block model
+      width: 54.5%;
+    }
+    &__image-korea {
+      // Position
+      position: absolute;
+      right: 0.5%;
+      bottom: 12%;
+      // Block model
+      width: 54%;
+    }
+    &__image-china {
+      // Position
+      right: -0.75%;
+      bottom: 7%;
+      // Block model
+      width: 61.8%;
+    }
+  }
+}

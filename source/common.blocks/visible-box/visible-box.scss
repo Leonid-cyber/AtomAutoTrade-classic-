@@ -1,0 +1,30 @@
+.visible-box {
+  // Decor
+  background-color: var(--page-background-second);
+  border-radius: 2.5rem;
+
+  &--less-rounded {
+    // Decor
+    border-radius: 1.25rem;
+  }
+
+}
+
+// .section-content + .visible-box {
+//   // Block model
+//   padding-top: 60px;
+//   background-color: gray;
+//   box-shadow: 0 0 100px gray;
+// }
+// .visible-box + .visible-box {
+//   // Block model
+//   padding-top: 60px;
+//   background-color: gray;
+//   box-shadow: 0 0 100px gray;
+// }
+// .section-content:has(.visible-box) + .visible-box {
+//   // Block model
+//   padding-top: 60px;
+//   background-color: gray;
+//   box-shadow: 0 0 100px gray;
+// }

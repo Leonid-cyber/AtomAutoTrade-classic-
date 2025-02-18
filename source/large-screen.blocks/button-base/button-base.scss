@@ -1,0 +1,36 @@
+// @media screen and (min-width: $large-screen) and (max-width: $extra-large-screen) {
+@media #{$media-rule-for-large-screen} {
+
+// .button-base {
+//     // Block model
+//     padding-left: 0.83rem;
+//     padding-right: 0.83rem;
+
+//     &--large-height {
+//         // Block model
+//         // min-height: 3.375rem;
+//         // padding: 0.7rem 0.875;
+//         // padding-left: 0.8rem;
+//         // padding-right: 0.8rem;
+//         // background-color: red;
+//         // 1.125
+//     }
+
+//     &--full-width {
+//         // Block model
+//         // padding-left: 14px;
+//         // padding-right: 14px;
+//     }
+
+//     // &--small-padding {
+//         // padding-left: 14px;
+//         // padding-right: 14px;
+//     // }
+
+//     &__text {
+//         // Typography
+//         font-size: 0.94rem;
+//     }
+// }
+
+}

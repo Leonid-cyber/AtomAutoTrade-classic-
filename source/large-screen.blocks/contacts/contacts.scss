@@ -1,0 +1,12 @@
+@media #{$media-rule-for-large-screen} {
+  .contacts {
+    // Block model
+    // gap: func-px-to-rem(101);
+    gap: func-px-to-rem(95);
+
+    &__methods-wrapper {
+      // Block model
+      gap: func-px-to-rem(22);
+    }
+  }
+}

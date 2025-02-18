@@ -1,0 +1,32 @@
+// @function func-convert-px-to-rem($px) {
+//   $conut-of-rem: $px / 16;
+
+//   @return $count-of-rem + rem;
+// }
+@use "sass:math";
+@use "sass:list";
+@use "sass:meta";
+// @use "sass:string ";
+
+// @function func-px-to-rem($px) {
+//   $glob-font-size: 16;
+//   $count-of-rem: math.div($px, $glob-font-size);
+//   $result: $count-of-rem + rem;
+//   @return $result;
+// }
+@function func-px-to-rem($number-in-pixels...) {
+  $result: ();
+  $glob-font-size: 16;
+  @each $number in $number-in-pixels {
+    @if unit($number) != "" {
+      @debug Use numbers only in function "px-to-rem",
+        dont use unit($number) in argument $number;
+    }
+  }
+  @each $number in $number-in-pixels {
+    $number: math.div($number, ($number * 0 + 1));
+    $number: math.div($number, $glob-font-size) * 1rem;
+    $result: list.append($result, $number);
+  }
+  @return $result;
+}

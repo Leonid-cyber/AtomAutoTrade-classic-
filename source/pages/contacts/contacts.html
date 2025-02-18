@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../images/icon-page/icon-page.ico"
+    type=”image/x-icon”>
+    <link rel="stylesheet" href="../../css/main.css" />
+    <title>Contacts</title>
+  </head>
+  <body>
+    @@include('../../common.blocks/header/header.html')
+
+    <div class="page section-wrapper section-wrapper--padding-top-small">
+      <div class="contacts">
+        <div class="contacts__description">
+          <div class="text-block">
+            <div class="title text-block__title">Наши контакты</div>
+            <div class="text text-block__text">
+              Свяжитесь с нами для подробной информации о покупке авто из
+              Японии, Китая и Кореи. Мы здесь, чтобы вам помочь!
+            </div>
+          </div>
+
+          <div class="contacts__methods-wrapper">
+            <div class="contacts__method contacts__method-telephone">
+              <div class="subtitle-second contacts__method-text">
+                Телефон для заказа
+              </div>
+              <div class="subtitle-second contacts__method-contact">
+                +7 964 444 64 94
+              </div>
+            </div>
+
+            <div class="contacts__method contacts__method-telephone">
+              <div class="subtitle-second contacts__method-text">
+                Телефон для консультации
+              </div>
+              <div class="subtitle-second contacts__method-contact">
+                +7 964 444 64 94
+              </div>
+            </div>
+
+            <div class="contacts__method contacts__method-mail">
+              <div class="subtitle-second contacts__method-text">
+                Для заказа и консультации
+              </div>
+              <div class="subtitle-second contacts__method-contact">
+                hello@atomautotrade.ru
+              </div>
+            </div>
+
+            <div class="contacts__method contacts__method-location">
+              <div class="subtitle-second contacts__method-text">
+                г. Владивосток
+              </div>
+              <div class="subtitle-second contacts__method-contact">
+                Березовая, 25; офис 523а
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contacts__location">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?lang=ru_RU&amp;scroll=false&amp;source=constructor-api&amp;um=constructor%3A232fd5af537e513e0db3c0dd3973c9c24661785ca2bdc08b15fb500a96cef580"
+            frameborder="0"
+            allowfullscreen="true"
+            width="100%"
+            height="100%"
+          >
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    @@include('../../common.blocks/consultation/_consultation-general.html')
+    @@include('../../common.blocks/footer/footer.html')
+    <!-- Outvisible -->
+    
+  </body>
+
+  <script src="../../js/main.js"></script>
+</html>

@@ -1,0 +1,21 @@
+.way-use-car {
+  // Block model
+  display: flex;
+  gap: func-px-to-rem(24);
+
+  &__item {
+    // Block model
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: func-px-to-rem(40);
+    display: flex;
+    align-items: flex-start;
+    gap: func-px-to-rem(24);
+
+    &-image {
+      // Block model
+      width: func-px-to-rem(76);
+      object-fit: contain;
+    }
+  }
+}

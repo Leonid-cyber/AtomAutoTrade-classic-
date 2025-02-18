@@ -1,0 +1,26 @@
+@media #{$media-rule-for-extra-small-screen} {
+
+.main-japan {
+    // Block model
+    // padding-top: 0rem;
+    // padding-bottom: 1.3rem;
+    padding-bottom: func-px-to-rem(60);
+    flex-direction: column;
+    gap: 2.5rem;
+
+    &__wrapper-text-block {
+        // Block model
+        width: 100%;
+    }
+    &__wrapper-image {
+        // Block model
+        width: 100%;
+        flex-basis: content;
+    }
+    &__image {
+        // Decor
+        border-radius: 1.88rem;
+    }
+}
+
+}

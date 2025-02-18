@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../images/icon-page/icon-page.ico"
+    type=”image/x-icon”>
+    <link rel="stylesheet" href="../../css/main.css" />
+    <title>Choosing cars from Korea</title>
+  </head>
+  <body>
+    @@include('../../common.blocks/header/header.html')
+
+    <main class="page main-slider">
+      <div class="main-slider__text-block-wrapper">
+        <div class="text-block-with-button">
+          <h1 class="title text-block-with-button__title">
+            Привезем авто из Кореи
+          </h1>
+
+          <p class="text text-block-with-button__text">
+            Широкий выбор автомобилей из Кореи, оперативная доставка и полное
+            сопровождение сделки.
+          </p>
+
+          <button
+            class="button-base text-block-with-button__button"
+            data-open-modal-window="car-from-korea"
+          >
+            <img
+              class="button-base__image text-block-with-button__button-image"
+              src="../../images/button-base/__loupe/loupe.svg"
+              alt=""
+            />
+
+            <span class="button-base__text text-block-with-button__button-text">
+              ПОДОБРАТЬ АВТО
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="main-slider__content">
+        <div class="main-slider__items">
+          <div class="main-slider__item">
+            <div
+              class="text main-slider__item-feature main-slider__item-feature--model"
+            >
+              kia Carnival
+            </div>
+
+            <div
+              class="text main-slider__item-feature main-slider__item-feature--price"
+            >
+              от 5 300 000 &#8381;
+            </div>
+
+            <img
+              class="main-slider__item-image"
+              src="../../images/main-slider/korea-car/jp2.png"
+              alt="china0"
+            />
+          </div>
+
+          <div class="main-slider__item">
+            <div
+              class="text main-slider__item-feature main-slider__item-feature--model"
+            >
+              Kia Seltos
+            </div>
+
+            <div
+              class="text main-slider__item-feature main-slider__item-feature--price"
+            >
+              от 1 500 000 &#8381;
+            </div>
+
+            <img
+              class="main-slider__item-image"
+              src="../../images/main-slider/korea-car/jp1.png"
+              alt="china0"
+            />
+          </div>
+
+          <div class="main-slider__item">
+            <div
+              class="text main-slider__item-feature main-slider__item-feature--model"
+            >
+              M-Benz GLC X253
+            </div>
+
+            <div
+              class="text main-slider__item-feature main-slider__item-feature--price"
+            >
+              от 5 200 000 &#8381;
+            </div>
+
+            <img
+              class="main-slider__item-image"
+              src="../../images/main-slider/korea-car/jp3.png"
+              alt="china0"
+            />
+          </div>
+
+          <div class="main-slider__item">
+            <div
+              class="text main-slider__item-feature main-slider__item-feature--model"
+            >
+              M-Benz GLC X253
+            </div>
+
+            <div
+              class="text main-slider__item-feature main-slider__item-feature--price"
+            >
+              от 5 200 000 &#8381;
+            </div>
+
+            <img
+              class="main-slider__item-image"
+              src="../../images/main-slider/korea-car/jp3.png"
+              alt="china0"
+            />
+          </div>
+        </div>
+
+        <div class="main-slider__controls">
+          <input
+            class="main-slider__controls-item"
+            type="radio"
+            name="image"
+            checked
+          />
+          <input class="main-slider__controls-item" type="radio" name="image" />
+          <input class="main-slider__controls-item" type="radio" name="image" />
+          <input class="main-slider__controls-item" type="radio" name="image" />
+        </div>
+      </div>
+    </main>
+
+    @@include('../../common.blocks/consultation/_consultation-korea.html')
+
+    <section class="page section-wrapper">
+      <div class="text-block">
+        <h2 class="title text-block__title">Популярные авто из Кореи</h2>
+
+        <p class="text text-block__text">
+          Лучшие автомобили Корейских производителей, а так же популярные
+          европейские и американские автомобильные бренды доступные к покупке.
+        </p>
+      </div>
+
+      <div class="section-wrapper__content">
+        @@include('../../common.blocks/filters/_korea.html')
+
+        <div class="slider-cards">
+          <div class="slider-cards__wrapper-items" data-slider-name="car-cards">
+            @@include('../../common.blocks/car-card/_car-card.html')
+          </div>
+
+          <div class="slider-cards__wrapper-for-controls">
+            <div class="slider-cards__indicator">
+              <div class="slider-cards__indicator-filling"></div>
+            </div>
+
+            <button
+              class="slider-cards__control slider-cards__control-previous"
+            ></button>
+
+            <button
+              class="slider-cards__control slider-cards__control-next"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="page selection-of-brands">
+      <div class="selection-of-brands__text-block">
+        <div class="title selection-of-brands__title">
+          Не только корейские бренды
+        </div>
+
+        <div class="text selection-of-brands__text">
+          Кроме известных корейских брендов, из Южной Кореи также удобно
+          импортировать американские и европейские машины с левосторонним рулём
+        </div>
+      </div>
+
+      <div class="selection-of-brands__content">
+        <div class="selection-of-brands__brands">
+          <div
+            class="selection-of-brands__brand selection-of-brands__brand-1"
+          ></div>
+          <div
+            class="selection-of-brands__brand selection-of-brands__brand-2"
+          ></div>
+          <div
+            class="selection-of-brands__brand selection-of-brands__brand-3"
+          ></div>
+          <div
+            class="selection-of-brands__brand selection-of-brands__brand-4"
+          ></div>
+          <div
+            class="selection-of-brands__brand selection-of-brands__brand-5"
+          ></div>
+          <div
+            class="selection-of-brands__brand selection-of-brands__brand-6"
+          ></div>
+          <div
+            class="selection-of-brands__brand selection-of-brands__brand-7"
+          ></div>
+          <div
+            class="selection-of-brands__brand selection-of-brands__brand-8"
+          ></div>
+          <div
+            class="selection-of-brands__brand selection-of-brands__brand-9"
+          ></div>
+        </div>
+
+        <div class="selection-of-brands__image-wrappper">
+          <img
+            class="selection-of-brands__image"
+            src="../../images/selection-of-brands/__car/auto.png"
+            alt="gelik"
+          />
+        </div>
+        <!-- <img class="selection-of-brands__image" src="../../images/selection-of-brands/__car/auto.png" alt="gelik"> -->
+
+        <!-- <div class="selection-of-brands__car"></div> -->
+      </div>
+    </div>
+
+    <section class="page section-wrapper">
+      <div class="text-block">
+        <h2 class="title text-block__title">Наши преимущества</h2>
+
+        <p class="text text-block__text">
+          Преимущества Atom Autotrade включают прозрачность сделки, надежность
+          сервиса и юридические гарантии при доставке, а также индивидуальный
+          подход к клиенту.
+        </p>
+      </div>
+
+      @@include('../../common.blocks/promises/_promises-japan.html')
+    </section>
+
+    <section class="page section-wrapper">
+      <div class="price-composition">
+        <div class="price-composition__text-block">
+          <div class="title price-composition__text-block-title">
+            Стоимость автомобиля из Кореи состоит из
+          </div>
+
+          <div class="text price-composition__text-block-text">
+            Ряд ключевых факторов, которые суммарно определяют итоговую
+            стоимость. Понимание их составляющих поможет вам ориентироваться в
+            процессе ценообразования авто из Кореи.
+          </div>
+        </div>
+
+        <div
+          class="price-composition__components price-composition__components--background-korea"
+        >
+          <div
+            class="price-composition__component price-composition__component--background-1 price-composition__component--large-padding-bottom"
+          >
+            <div class="title-second price-composition__component-title">
+              Стоимость авто в Кореи
+            </div>
+            <div class="text price-composition__component-text">
+              На цену влияет год выпуска автомобиля, его пробег, оценка и
+              популярность модели
+            </div>
+          </div>
+
+          <div
+            class="price-composition__component price-composition__component--background-2"
+          >
+            <div class="title-second price-composition__component-title">
+              Таможенное оформление
+            </div>
+            <div class="text price-composition__component-text">
+              Цена складывается из таможенного сбора, утиль. сбора, пошлин и
+              налогов
+            </div>
+          </div>
+
+          <div class="price-composition__component-empty"></div>
+
+          <div
+            class="price-composition__component price-composition__component--background-korea"
+          >
+            <div class="title-second price-composition__component-title">
+              Расходы по Кореи
+            </div>
+            <div class="text price-composition__component-text">
+              Транспортировка машины по территории Японии в порт отгрузки
+            </div>
+          </div>
+
+          <div
+            class="price-composition__component price-composition__component--background-4"
+          >
+            <div class="title-second price-composition__component-title">
+              Доставка в любой город
+            </div>
+            <div class="text price-composition__component-text">
+              Стоимость доставки зависит от удалённости населённого пункта от
+              города Владивостока
+            </div>
+          </div>
+
+          <div
+            class="price-composition__component price-composition__component--background-5"
+          >
+            <div class="title-second price-composition__component-title">
+              Перевозка в РФ морем
+            </div>
+            <div class="text price-composition__component-text">
+              Перевозка из Кореи в Россию осуществляется морским путем
+            </div>
+          </div>
+
+          <div
+            class="price-composition__component price-composition__component--background-6"
+          >
+            <div class="title-second price-composition__component-title">
+              Услуги компании
+            </div>
+            <div class="text price-composition__component-text">
+              Фиксированная и неизменная стоимость с момента заключения договора
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page section-wrapper">
+      <div class="text-block">
+        <h2 class="title text-block__title">
+          Схема покупки авто из Кореи
+          <img
+            class="text-block__title--image"
+            src="../../images/section-content/__title-image/korea-flag.svg"
+            alt=""
+          />
+        </h2>
+
+        <p class="text text-block__text">
+          Ваш надежный путь к автомобилю прямиком из Южной Кореи. От подбора и
+          покупки до доставки и регистрации на территории Российской Федерации.
+          Безопасно, выгодно, удобно!
+        </p>
+      </div>
+
+      @@include('../../common.blocks/purchase-cheme/_purchase-cheme.html')
+    </section>
+
+    <section class="page section-wrapper--padding-top-small">
+      @@include('../../common.blocks/order-a-purchase/_order-a-purchase-korea.html')
+    </section>
+
+    @@include('../../common.blocks/footer/footer.html')
+    <!-- Outvisible -->
+    @@include('../../common.blocks/modal-order-similar/_modal-order-similar.html')
+    @@include('../../common.blocks/modal-order-similar/_car-from-korea.html')
+    @@include('../../common.blocks/on-screen-navigation/on-screen-navigation.html')
+  </body>
+
+  <script src="../../js/main.js"></script>
+</html>

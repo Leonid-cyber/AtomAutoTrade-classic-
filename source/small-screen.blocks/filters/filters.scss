@@ -1,0 +1,25 @@
+@media #{$media-rule-for-small-screen} {
+
+.filters {
+    // Block model
+    flex-direction: column;
+    gap: 1.75rem;
+
+    &__type-of-cars {
+        // Block model
+        order: 2;
+        gap: 0.85rem 0.3rem;
+        flex-wrap: wrap;
+    }
+    &__country {
+        // Block model
+        order: 1;
+        gap: 0.4rem;
+    }
+        &__item-text{
+            // Typography
+            font-size: 1rem;
+        }
+}
+
+}

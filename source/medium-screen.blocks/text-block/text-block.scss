@@ -1,0 +1,21 @@
+@media #{$media-rule-for-medium-screen} {
+  .text-block {
+    &__title {
+      // Block model
+      padding-bottom: 1rem;
+
+      &--image {
+        // Block model
+        width: 3.25rem;
+      }
+    }
+    &__subtitle {
+      // Block model
+      padding-bottom: 1rem;
+    }
+    &__previous-arrow {
+      // Block model
+      gap: func-px-to-rem(6);
+    }
+  }
+}

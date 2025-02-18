@@ -1,0 +1,31 @@
+.text-block-with-button {
+  // background-color: red;
+  // box-shadow: 0 0 20px red;
+  &__title {
+    // Block model
+    padding-bottom: 1.15rem;
+    width: 95%;
+    // Typography
+    font-size: 2rem;
+    line-height: 120%;
+  }
+  &__text {
+    // Block model
+    width: 95%;
+    width: 94%;
+    padding-bottom: 1.73rem;
+    // Typography
+    text-wrap: balance;
+  }
+  &__button {
+    // Block model
+    width: 13.44rem;
+    min-height: 3rem;
+    padding: 0.875rem;
+
+    &-image {
+    }
+    &-text {
+    }
+  }
+}

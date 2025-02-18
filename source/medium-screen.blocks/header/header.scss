@@ -1,0 +1,36 @@
+@media #{$media-rule-for-medium-screen} {
+  // @media screen and (min-width: $medium-screen) {
+  .header {
+    &__top {
+      // Block model
+      padding-top: 1.15rem;
+    }
+
+    &__top-left-side {
+      // Block model
+      gap: 9.3rem;
+    }
+
+    &__phone-numbers {
+      // Block model
+      display: none;
+    }
+    // &__wrapper-button-auction {
+    //   // Block model
+    //   width: 9.6rem;
+    // }
+    &__button-auction {
+      // Block model
+      width: 9.6rem;
+
+      &-image {
+        // Block model
+        width: 1.25rem;
+      }
+      &-text {
+        // Block model
+        font-size: 0.875rem;
+      }
+    }
+  }
+}

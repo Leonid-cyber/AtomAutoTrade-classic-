@@ -1,0 +1,73 @@
+@media #{$media-rule-for-extra-small-screen} {
+  .main-slider {
+    // Block model
+    flex-direction: column;
+    padding-top: func-px-to-rem(40);
+    padding-bottom: 0;
+    gap: func-px-to-rem(40);
+
+    &__text-block-wrapper {
+      // Block model
+      padding-top: 0;
+      width: 100%;
+      flex: 0 0 100%;
+    }
+
+    &__content {
+      // Block model
+      flex: 0 0 100%;
+      width: 100%;
+      flex-direction: column;
+      gap: func-px-to-rem(24);
+    }
+
+    &__items {
+      // Block model
+      width: 100%;
+      // height: func-px-to-rem(161);
+      flex: 0 0 func-px-to-rem(161);
+      // flex: 0 0 15.81rem;
+    }
+
+    &__item-feature {
+      // Block model
+      padding: func-px-to-rem(11, 11, 11, 28);
+      // Decor
+      background-size: func-px-to-rem(12);
+      border-radius: 0.5rem;
+      // Typography
+      font-size: func-px-to-rem(7.5);
+    }
+
+    &__controls {
+      // Block model
+      margin: 0;
+      flex-direction: row;
+      padding: 0;
+      gap: 0.75rem;
+    }
+
+    &__controls-item {
+      // Block model
+      width: 2.4rem;
+      width: func-px-to-rem(24);
+
+      &::after {
+        // Block model
+        width: func-px-to-rem(6);
+      }
+
+      &:checked::after {
+        // Block model
+        width: func-px-to-rem(6);
+        width: func-px-to-rem(6);
+      }
+
+      &:checked::before {
+        // Block model
+        width: func-px-to-rem(24);
+        width: func-px-to-rem(24);
+      }
+    }
+  }
+}

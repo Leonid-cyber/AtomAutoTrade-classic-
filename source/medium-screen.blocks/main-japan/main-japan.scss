@@ -1,0 +1,19 @@
+@media #{$media-rule-for-medium-screen} {
+  .main-japan {
+    // Block model
+    padding-top: func-px-to-rem(44);
+    padding-bottom: func-px-to-rem(125);
+    // padding-top: 4.1rem;
+    // padding-bottom: 4.1rem;
+
+    &__wrapper-text-block {
+      // Block model
+      // flex: 0 0 36%;
+      flex: 0 0 39.55%;
+    }
+    &__wrapper-image {
+      // Block model
+      flex: 0 0 56.82%;
+    }
+  }
+}

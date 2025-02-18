@@ -1,0 +1,29 @@
+@media #{$media-rule-for-medium-screen} {
+  .modal-order-similar {
+    &__inner {
+      // Block model
+      gap: func-px-to-rem(40);
+
+      &--small-padding {
+        // Block model
+        padding: func-px-to-rem(20, 41, 20, 20);
+      }
+
+      &--large-padding {
+        // Block model
+        padding: func-px-to-rem(81, 75);
+      }
+    }
+
+    &__close-icon {
+      // Position
+      top: func-px-to-rem(30);
+      right: func-px-to-rem(30);
+    }
+
+    &__card-auto {
+      // Block model
+      width: func-px-to-rem(298);
+    }
+  }
+}

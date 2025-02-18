@@ -1,0 +1,118 @@
+.car-card {
+  // Position
+  position: relative;
+  // Block model
+  box-sizing: border-box;
+  // Decor
+  overflow: hidden;
+  opacity: 0;
+  // Animation
+  transition: 1s ease all, 0.5s ease transform;
+  transform: translateY(100%) scaleX(0%);
+
+  // // Decor
+  // opacity: 1;
+  // // Animation
+  // transform: translateY(0%) scaleX(100%);
+
+  &--add {
+    // Decor
+    opacity: 1;
+    // Animation
+    transform: translateY(0%) scaleX(100%);
+  }
+
+  &--padding-top-bottom-large {
+    // padding-top: 0.35rem;
+    // padding-bottom: 0.7rem;
+    box-shadow: 0 0 5px red;
+  }
+
+  &__advantage {
+    // Position
+    position: absolute;
+    top: 0.875rem;
+    right: 0.875rem;
+    // Block model
+    box-sizing: border-box;
+    max-width: 40%;
+    padding: 0.75rem 1.625rem;
+    // Typography
+    text-align: center;
+    text-wrap: balance;
+    font-size: 0.75rem;
+    line-height: 117%;
+    color: var(--text-color-third);
+    // Decor
+    background-color: var(--basic-color);
+    border-radius: 2.5rem;
+    // Other
+    z-index: 5;
+  }
+
+  &__image {
+    // Block model
+    display: block;
+    // padding-bottom: 1.2rem;
+    padding-bottom: 1.375rem;
+    width: 100%;
+    height: 13.25rem;
+    object-fit: cover;
+  }
+
+  &__text-wrapper {
+    // Block model
+    padding: 0rem 2rem 1.5rem 2rem;
+  }
+
+  &__title {
+    // Block model
+    padding-bottom: 0.5rem;
+    // Typography
+    line-height: 120%;
+  }
+  &__characteristics {
+    // Block model
+    padding-bottom: 0.875rem;
+    // Typography
+    font-size: 1rem;
+    color: #585858;
+    line-height: 120%;
+  }
+  &__tags {
+    // Block model
+    padding-bottom: 1.125rem;
+    display: flex;
+    gap: 0.35rem;
+  }
+  &__tag {
+    // Block model
+    padding: 0.625rem 0.875rem;
+    // Typography
+    color: #7d7d7d;
+    font-size: 0.75rem;
+    line-height: 120%;
+    // Decor
+    background-color: #efefef;
+    border-radius: 0.62rem;
+  }
+  &__price {
+    // Block model
+    padding-bottom: 1.25rem;
+    /* Typography */
+    font-size: 1.56rem;
+    color: var(--text-color-first);
+  }
+  &__button {
+    // Block model
+    width: 100%;
+    min-height: 3.38rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+
+    &-image {
+    }
+    &-text {
+    }
+  }
+}

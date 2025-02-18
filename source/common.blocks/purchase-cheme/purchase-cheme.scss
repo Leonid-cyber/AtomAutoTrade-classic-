@@ -1,0 +1,14 @@
+.purchase-cheme {
+    // Block model
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    // gap: 1.45rem;
+    gap: 1.5rem;
+    // justify-items: center;
+    justify-items: stretch;
+    justify-content: space-between;
+    // Other
+    counter-reset: promise-counter 0;
+}

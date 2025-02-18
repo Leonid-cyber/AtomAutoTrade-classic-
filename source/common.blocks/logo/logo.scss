@@ -1,0 +1,26 @@
+.logo {
+    // Block model
+    width: 100%;
+
+    &__atom {
+        // Decor
+        fill: var(--basic-color);
+    }
+    &__autotrade {
+        // Decor
+        fill: var(--title-color)
+    }
+    &__circles {
+        // Decor
+        fill: black;
+    }
+    &__circles-dot-center {
+        // Decor
+        fill: black;
+    }
+    &__circles-dot-side {
+        // Decor
+        fill: var(--basic-color);
+    }
+    // fill: var(--title-color)
+}

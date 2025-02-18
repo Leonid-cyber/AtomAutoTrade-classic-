@@ -1,0 +1,110 @@
+/* SCSS VARS */
+$extra-large-screen: 1280px;
+$large-screen: 1000px;
+$medium-screen: 768px;
+$small-screen: 480px;
+$extra-small-screen: 320px;
+// 1280 = 1116
+// 1000-1279 = 888
+// 768-999 = 660
+// 480-767 = 432
+// 320-479 = 272
+
+// Media vars
+$media: screen;
+$feature: width;
+$feature-min-width: min-width;
+$feature-max-width: max-width;
+
+// Media rules
+// $media-rule-for-extra-large-screen: "#{$media} and (#{$feature-min-width}: #{$extra-large-screen})";
+// $media-rule-for-large-screen: "#{$media} and (#{$feature-max-width}: #{$extra-large-screen})";
+
+// Наследует каждый уровень
+// $media-rule-for-extra-large-screen: "#{$media} and (#{$feature} > #{$extra-large-screen})";
+// $media-rule-for-large-screen: "#{$media} and (#{$feature} < #{$extra-large-screen})";
+// $media-rule-for-medium-screen: "#{$media} and (#{$feature} < #{$large-screen})";
+// $media-rule-for-small-screen: "#{$media} and (#{$feature} < #{$medium-screen})";
+// $media-rule-for-extra-small-screen: "#{$media} and (#{$feature} < #{$small-screen})";
+
+// Наследует только common.blocks
+$media-rule-for-extra-large-screen: "#{$media} and (#{$feature} >= #{$extra-large-screen})";
+
+$media-rule-for-large-screen: "#{$media} and (#{$large-screen} <= #{$feature} < #{$extra-large-screen})";
+
+$media-rule-for-medium-screen: "#{$media} and (#{$medium-screen} <= #{$feature} < #{$large-screen})";
+
+$media-rule-for-small-screen: "#{$media} and (#{$small-screen} <= #{$feature} < #{$medium-screen})";
+
+$media-rule-for-extra-small-screen: "#{$media} and (#{$extra-small-screen} <= #{$feature} < #{$small-screen})";
+
+/* CSS VARS */
+/* в отдельные пременные цвета текста и фона даже если одинаковые*/
+:root {
+  // COLORS
+  --basic-color: #5969ff;
+  --page-background: #f5f5f5;
+  --page-background-second: #fff;
+  --text-color-second: #7d7d7d;
+  --text-color-first: #424242;
+  --text-color-third: #fff;
+  --text-color-fourth: #f5f5f5;
+  --text-color-small: #969696;
+  --text-color-placeholder: #6c6c6c;
+  --title-color: #36175e;
+  --header-line-color: #f3f3f3;
+
+  // --small-screen-width: 432px;
+
+  // /* font-size font-family */
+  // font: 1.2em "Fira Sans", sans-serif;
+
+  // /* font-size/line height font-family */
+  // font: 1.2em/2 "Fira Sans", sans-serif;
+
+  // /* font-style font-weight font-size font-family */
+  // font: italic bold 1.2em "Fira Sans", sans-serif;
+  // size screen
+  // --desktop-size: 1280px;
+  // --desktop-size: 1279px;
+  // // --laptop-size: 1279px;
+  // --tablet-size: 999px;
+  // --mobile-size: 767px;
+  // --tiny-mobile: 480px;
+
+  // --title-text-color: #36175e;
+  // --main-text-basic: #424242;
+  // --gray-1: #7d7d7d;
+  // --title-text-color: #36175e;
+  // --white: #fff;
+  // --red-basic: null;
+  // --gray-1: #7d7d7d;
+  // fonts
+  // --font-family: "Museo Sans Cyrl", sans-serif;
+  // --second-family: "RF Dewi Expanded", sans-serif;
+  // --third-family: "MuseoModerno", sans-serif;
+  // --font3: "Montserrat", sans-serif;
+  // --font4: "Helvetica Neue", sans-serif;
+}
+
+// :root {
+// 	--container-width: 1200px;
+// 	--container-padding: 15px;
+
+// 	--font-main: 'Poppins', sans-serif;
+// 	--font-accent: 'Playfair Display', serif;
+
+// 	--page-bg: #fff;
+// 	--text-color: #000;
+// 	--accent: #ac182c;
+// 	// ADAPTIVE
+//     --laptop-size: 1199px;
+// 	--tablet-size: 959px;
+// 	--mobile-size: 599px;
+// }
+
+// // DARK THEME
+//  .dark {
+//     --page-background: #252526;
+//     --text-color: #fff;
+// }

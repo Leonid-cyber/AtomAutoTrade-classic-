@@ -1,0 +1,12 @@
+@media #{$media-rule-for-large-screen} {
+
+.slider-cards {
+
+    &__wrapper-for-controls {
+        // Block model
+        margin-top: 2.0rem;
+    }
+
+}
+
+}

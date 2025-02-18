@@ -1,0 +1,32 @@
+@media #{$media-rule-for-extra-small-screen} {
+  .description-method {
+    &__text-block {
+      // Block model
+      flex-direction: column;
+
+      &-title {
+        // Block model
+        width: 100%;
+      }
+      &-text {
+        // Block model
+        width: 100%;
+      }
+    }
+    &__wrapper-images {
+      // Block model
+      padding-top: func-px-to-rem(32);
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: 100%;
+    }
+    &__image {
+      // Block model
+      border-radius: 1.88rem;
+
+      &--large-image {
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
+    }
+  }
+}

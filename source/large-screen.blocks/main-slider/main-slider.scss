@@ -1,0 +1,56 @@
+@media #{$media-rule-for-large-screen} {
+  .main-slider {
+    // Block model
+    padding-top: func-px-to-rem(108);
+    padding-bottom: func-px-to-rem(37);
+
+    &__content {
+      // Block model
+      flex: 0 0 64%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    &__items {
+      // Block model
+      height: 18.25rem;
+    }
+
+    &__item {
+      &-feature {
+        // Block model
+        padding: 1.3125rem 1rem 1.3125rem 3.1875rem;
+        // Decor
+        background-size: 1.3125rem;
+        // Typography
+        font-size: 0.88rem;
+      }
+    }
+
+    &__controls {
+      // Position
+      position: relative;
+      top: 1.85rem;
+      // Block model
+      padding: 0;
+      gap: 0.42rem;
+    }
+
+    &__controls-item {
+      &::after {
+        // Block model
+        width: 0.625rem;
+      }
+      &:checked::after {
+        // Block model
+        width: 0.5625rem;
+      }
+      &:checked::before {
+        // Block model
+        width: 106%;
+        height: 106%;
+      }
+    }
+  }
+}

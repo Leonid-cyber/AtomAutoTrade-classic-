@@ -1,0 +1,36 @@
+@media #{$media-rule-for-medium-screen} {
+  .car-sales-and-card {
+    // Block model
+    gap: func-px-to-rem(50);
+
+    &__previous-arrow {
+      // Block model
+      margin-bottom: func-px-to-rem(20);
+    }
+
+    &__additional-images-wrapper {
+      // Block model
+      padding-top: func-px-to-rem(32);
+
+      gap: func-px-to-rem(6);
+    }
+    &__additional-image {
+      // Decor
+      border-radius: func-px-to-rem(10);
+    }
+
+    &__text-block {
+      // Block model
+      padding-top: func-px-to-rem(48);
+    }
+    &__price {
+      // Typography
+      font-size: 1.5rem;
+    }
+
+    &__characteristics-text {
+      // Typography
+      font-size: 0.88rem;
+    }
+  }
+}

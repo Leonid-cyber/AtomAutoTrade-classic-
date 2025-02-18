@@ -1,0 +1,63 @@
+@media #{$media-rule-for-medium-screen} {
+  .faq {
+    // Block model
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    &__title {
+      // Block model
+      padding-bottom: func-px-to-rem(44);
+    }
+    &__questions {
+      // Block model
+      width: 100%;
+    }
+    &__question-wrapper {
+      // Block model
+      padding: func-px-to-rem(36);
+      min-height: func-px-to-rem(119);
+
+      &::after {
+        // Position
+        top: func-px-to-rem(48);
+        right: func-px-to-rem(36);
+      }
+
+      &--open {
+        // Block model
+        gap: func-px-to-rem(16);
+      }
+    }
+
+    &__question {
+      // Block model
+      width: 69.7%;
+    }
+
+    &__contact {
+      // Position
+      position: relative;
+      // Block model
+      display: block;
+      margin-top: func-px-to-rem(24);
+      width: 100%;
+      padding: func-px-to-rem(40, 313, 40, 57);
+
+      &-title {
+        // Typography
+        font-size: 1.25rem;
+      }
+      &-wrapper-buttons {
+        // Position
+        position: absolute;
+        top: 50%;
+        right: func-px-to-rem(40);
+        // Block model
+        padding: 0;
+        gap: func-px-to-rem(10);
+        // Decor
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

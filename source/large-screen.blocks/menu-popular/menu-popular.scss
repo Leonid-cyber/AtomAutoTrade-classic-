@@ -1,0 +1,38 @@
+@media #{$media-rule-for-large-screen} {
+
+.menu-popular {
+    // Block model
+    // min-height: 35rem;
+    padding-top: 3.7rem;
+    padding-bottom: 3.9rem;
+
+    &__inner {
+        // Block model
+        gap: 5.2rem;
+    }
+
+    &__content {
+        // Block model
+        gap: 6rem;
+    }
+
+        &__content-top {
+            // Block model
+            max-height: 16.94rem;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 3.7rem 5.55rem;
+        }
+
+        &__content-bottom {
+            // Block model
+            gap: 6.7rem;
+        }
+
+    &__close-menu {
+        // Position
+        top: -9.7%;
+    }
+}
+
+}

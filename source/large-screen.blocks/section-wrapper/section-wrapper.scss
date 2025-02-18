@@ -1,0 +1,13 @@
+@media #{$media-rule-for-large-screen} {
+  .section-wrapper {
+    &__content {
+      // Block model
+      // padding-top: calc((44 / 16) * 1rem);
+      padding-top: func-px-to-rem(44);
+    }
+    .section-wrapper__content + .section-wrapper__content {
+      // 60 40 32 32 32
+      padding-top: func-px-to-rem(40);
+    }
+  }
+}

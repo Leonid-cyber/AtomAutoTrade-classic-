@@ -1,0 +1,18 @@
+@media #{$media-rule-for-medium-screen} {
+  .contacts {
+    // Block model
+    gap: func-px-to-rem(81);
+    gap: func-px-to-rem(60);
+
+    &__methods-wrapper {
+      // Block model
+      padding-top: func-px-to-rem(32);
+      gap: func-px-to-rem(22);
+    }
+
+    &__location {
+      // Block model
+      width: 48.2%;
+    }
+  }
+}

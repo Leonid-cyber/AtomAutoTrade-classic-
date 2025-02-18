@@ -1,0 +1,417 @@
+// При такой задаче условий применения стилей они не наследуются
+// .page {
+//     // Position
+//     position: relative;
+//     // Block model
+//     margin: 0 auto;
+//     // overflow: hidden;
+//     // Decor
+//     // box-shadow: 0 0 15px red;
+
+//     &::before {
+//         // Position
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         // Block model
+//         padding: 0.3rem;
+//         // Typography
+//         font-family: 'Museo Sans Cyrl 500';
+//         color: goldenrod;
+//         // Decor
+//         content: 'no rules';
+//         background-color: var(--basic-color);
+//     }
+
+//     @media screen and (min-width: $extra-large-screen) {
+//         // Block model
+//         max-width: 1116px;
+
+//         &::before {
+//             content: 'extra-large-screen';
+//         }
+
+//     }
+
+//     @media screen and (min-width: $large-screen) and (max-width: $extra-large-screen) {
+//         // Block model
+//         max-width: 888px;
+
+//         &::before {
+//             content: 'large-screen';
+//         }
+//     }
+
+//     @media screen and (min-width: $medium-screen) and (max-width: $large-screen) {
+//         // Block model
+//         max-width: 660px;
+
+//         &::before{
+//             content: 'medium-screen';
+//         }
+//     }
+
+//     @media screen and (min-width: $small-screen) and (max-width: $medium-screen) {
+//         // Block model
+//         max-width: 432px;
+
+//         &::before{
+//             content: 'small-screen';
+//         }
+//     }
+
+//     @media screen and (min-width: $extra-small-screen) and (max-width: $small-screen) {
+//     // @media screen and (max-width: $extra-small-screen) {
+//         // Block model
+//         max-width: 272px;
+
+//         &::before{
+//             content: 'extra-small-screen';
+//         }
+//     }
+
+//     @media screen and (max-width: $extra-small-screen) {
+//         // Block model
+//         max-width: 272px;
+
+//         &::before{
+//             content: 'VERY-extra-small-screen';
+//         }
+//     }
+// }
+
+// 1280 = 1116
+// 1000-1279 = 888
+// 768-999 = 660
+// 480-767 = 432
+// 320-479 = 272
+
+.page {
+  // Position
+  position: relative;
+  // Block model
+  margin: 0 auto;
+  // overflow: hidden;
+  // Decor
+  // box-shadow: 0 0 15px red;
+
+  &::before {
+    // Position
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    // Block model
+    padding: 0.3rem;
+    // Typography
+    font-family: "Museo Sans Cyrl 500";
+    color: goldenrod;
+    // Decor
+    content: "no rules";
+    background-color: var(--basic-color);
+    opacity: 0.3;
+    // transform: translateX(-100%);
+  }
+
+  @media #{$media-rule-for-extra-large-screen} {
+    // Block model
+    max-width: 1116px;
+
+    &::before {
+      content: "extra-large-screen";
+    }
+  }
+
+  @media #{$media-rule-for-large-screen} {
+    // Block model
+    max-width: 888px;
+
+    &::before {
+      content: "large-screen";
+    }
+  }
+
+  @media #{$media-rule-for-medium-screen} {
+    // @media screen and (768px < width < 999px) {
+    // Block model
+    max-width: 660px;
+
+    &::before {
+      content: "medium-screen";
+    }
+  }
+
+  @media #{$media-rule-for-small-screen} {
+    // Block model
+    max-width: 432px;
+
+    &::before {
+      content: "small-screen";
+    }
+  }
+
+  @media #{$media-rule-for-extra-small-screen} {
+    // Block model
+    max-width: 272px;
+
+    &::before {
+      content: "extra-small-screen";
+    }
+  }
+}
+
+// Reverse working
+// .page {
+//     // Position
+//     position: relative;
+//     // Block model
+//     margin: 0 auto;
+//     // Decor
+//     // box-shadow: 0 0 15px red;
+
+//     &::before {
+//         // Position
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         // Block model
+//         padding: 0.3rem;
+//         // Typography
+//         font-family: 'Museo Sans Cyrl 500';
+//         color: goldenrod;
+//         // Decor
+//         content: 'no rules';
+//         background-color: var(--basic-color);
+//     }
+
+//     // @media screen and (max-width: $extra-small-screen) {
+//     //     // Block model
+//     //     max-width: 272px;
+
+//     //     &::before{
+//     //         content: 'VERY-extra-small-screen';
+//     //     }
+//     // }
+
+//     @media screen and (min-width: $extra-small-screen) {
+//         // Block model
+//         max-width: 272px;
+
+//         &::before{
+//             content: 'extra-small-screen';
+//         }
+//     }
+
+//     @media screen and (min-width: $small-screen) {
+//         // Block model
+//         max-width: 432px;
+
+//         &::before{
+//             content: 'small-screen';
+//         }
+//     }
+
+//     @media screen and (min-width: $medium-screen) {
+//         // Block model
+//         max-width: 660px;
+
+//         &::before{
+//             content: 'medium-screen';
+//         }
+//     }
+
+//     @media screen and (min-width: $large-screen) {
+//         // Block model
+//         max-width: 888px;
+
+//         &::before {
+//             content: 'large-screen';
+//         }
+//     }
+
+//     @media screen and (min-width: $extra-large-screen) {
+//         // Block model
+//         max-width: 1116px;
+
+//         &::before {
+//             content: 'extra-large-screen';
+//         }
+
+//     }
+// }
+
+// .page {
+//     // Position
+//     position: relative;
+//     // Block model
+//     margin: 0 auto;
+//     // Decor
+//     // box-shadow: 0 0 15px red;
+
+//     &::before {
+//         // Position
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         // Block model
+//         padding: 0.3rem;
+//         // Typography
+//         font-family: 'Museo Sans Cyrl 500';
+//         color: goldenrod;
+//         // Decor
+//         content: 'no rules';
+//         background-color: var(--basic-color);
+//     }
+
+//     @media screen and (min-width: $extra-small-screen) {
+//     // @media screen and (max-width: $extra-small-screen) {
+//         // Block model
+//         max-width: 272px;
+
+//         &::before{
+//             content: 'extra-small-screen';
+//         }
+//     }
+
+//     @media screen and (min-width: $small-screen) {
+//         // Block model
+//         max-width: 432px;
+
+//         &::before{
+//             content: 'small-screen';
+//         }
+//     }
+
+//     @media screen and (min-width: $medium-screen) {
+//         // Block model
+//         max-width: 660px;
+
+//         &::before{
+//             content: 'medium-screen';
+//         }
+//     }
+
+//     @media screen and (min-width: $large-screen) {
+//         // Block model
+//         max-width: 888px;
+
+//         &::before {
+//             content: 'large-screen';
+//         }
+//     }
+
+//     @media screen and (min-width: $extra-large-screen) {
+//         // Block model
+//         max-width: 1116px;
+
+//         &::before {
+//             content: 'extra-large-screen';
+//         }
+
+//     }
+
+//     // @media screen and (max-width: $extra-small-screen) {
+//     //     // Block model
+//     //     max-width: 272px;
+
+//     //     &::before{
+//     //         content: 'VERY-extra-small-screen';
+//     //     }
+//     // }
+// }
+
+// 1280 = 1116
+// 1000-1279 = 888
+// 768-999 = 660
+// 480-767 = 432
+// 320-479 = 272
+
+// Стили наследуются от больших к маленьким(не сделано)
+// .page {
+//     // Position
+//     position: relative;
+//     // Block model
+//     margin: 0 auto;
+//     // Decor
+//     // box-shadow: 0 0 15px red;
+
+//     &::before {
+//         // Position
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         // Block model
+//         padding: 0.3rem;
+//         // Typography
+//         font-family: 'Museo Sans Cyrl 500';
+//         color: goldenrod;
+//         // Decor
+//         content: 'no rules';
+//         background-color: var(--basic-color);
+//     }
+
+//     // @media screen and (max-width: $extra-small-screen) {
+//     // // @media screen and (max-width: $extra-small-screen) {
+//     //     // Block model
+//     //     max-width: 272px;
+
+//     //     &::before{
+//     //         content: 'extra-small-screen';
+//     //     }
+//     // }
+
+//     // @media screen and (max-width: $small-screen) {
+//     //     // Block model
+//     //     max-width: 432px;
+
+//     //     &::before{
+//     //         content: 'small-screen';
+//     //     }
+//     // }
+
+//     // @media screen and (max-width: $medium-screen){
+//     //     // Block model
+//     //     max-width: 660px;
+
+//     //     &::before{
+//     //         content: 'medium-screen';
+//     //     }
+//     // }
+
+//     // @media screen and (max-width: $large-screen) {
+//     //     // Block model
+//     //     max-width: 888px;
+
+//     //     &::before {
+//     //         content: 'large-screen';
+//     //     }
+//     // }
+
+//     @media screen and (min-width: $extra-large-screen){
+//         // Block model
+//         max-width: 1116px;
+
+//         &::before {
+//             content: 'extra-large-screen';
+//         }
+
+//     }
+
+//     @media screen and (max-width: $large-screen) {
+//         // Block model
+//         max-width: 888px;
+
+//         &::before {
+//             content: 'large-screen';
+//         }
+//     }
+
+//     // @media screen and (max-width: $extra-small-screen) {
+//     //     // Block model
+//     //     max-width: 272px;
+
+//     //     &::before{
+//     //         content: 'VERY-extra-small-screen';
+//     //     }
+//     // }
+// }

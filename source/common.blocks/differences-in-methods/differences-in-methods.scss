@@ -1,0 +1,60 @@
+.differences-in-methods {
+  // Position
+  position: relative;
+  z-index: 5;
+  // Block model
+  box-sizing: border-box;
+  padding: func-px-to-rem(60, 613, 60, 71);
+
+  &--padding-small {
+    // Block model
+    padding: func-px-to-rem(60, 544, 60, 71);
+  }
+
+  &__text {
+    // Block model
+    // width: 42.5%;
+    // padding-bottom: 1.5rem;
+  }
+
+  &__button {
+    // Block model
+    // max-width: 21.19rem;
+    max-width: max-content;
+    min-height: 3rem;
+
+    &--large-height {
+      // Block model
+      min-height: 3.38rem;
+    }
+
+    &-image {
+      // Block model
+      margin-left: -0.1rem;
+    }
+    &-text {
+    }
+  }
+
+  &__image {
+    // Position
+    z-index: -1;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    // Block model
+    display: block;
+    width: 56.3%;
+  }
+  &__image-2 {
+    // Position
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    // Block model
+    display: block;
+    width: calc((569 / 1116) * 100%);
+    transform: translate(func-px-to-rem(0), func-px-to-rem(100));
+  }
+}

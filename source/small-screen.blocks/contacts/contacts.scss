@@ -1,0 +1,19 @@
+@media #{$media-rule-for-small-screen} {
+  .contacts {
+    // Block model
+    flex-direction: column;
+    gap: func-px-to-rem(60);
+
+    &__methods-wrapper {
+      // Block model
+      padding-top: func-px-to-rem(32);
+      gap: func-px-to-rem(22);
+    }
+
+    &__location {
+      // Block model
+      width: 100%;
+      height: func-px-to-rem(220);
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@media #{$media-rule-for-small-screen} {
+  .car-cutting {
+    // Block model
+    padding-top: func-px-to-rem(32);
+    gap: func-px-to-rem(32);
+
+    &__item {
+      // Block model
+      gap: func-px-to-rem(32);
+    }
+
+    &__wrapper-images {
+      // Block model
+      gap: func-px-to-rem(54);
+      min-height: func-px-to-rem(155);
+    }
+  }
+}

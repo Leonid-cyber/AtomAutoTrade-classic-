@@ -1,0 +1,19 @@
+@media #{$media-rule-for-medium-screen} {
+  .documents {
+    &__item {
+      flex-direction: column;
+      gap: func-px-to-rem(18);
+      padding: func-px-to-rem(40, 56, 36);
+
+      &-title {
+        // Block model
+        width: min-content;
+      }
+
+      &-image {
+        // Block model
+        width: 100%;
+      }
+    }
+  }
+}

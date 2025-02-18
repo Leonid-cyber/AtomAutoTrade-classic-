@@ -1,0 +1,11 @@
+@media #{$media-rule-for-large-screen} {
+
+.main-japan {
+    // Block model
+    padding-top: func-px-to-rem(52);
+    padding-bottom: func-px-to-rem(113);
+    // padding-top: 3.35rem;
+    // padding-bottom: 3.3rem;
+}
+
+}

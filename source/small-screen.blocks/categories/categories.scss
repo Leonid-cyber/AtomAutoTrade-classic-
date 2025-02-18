@@ -1,0 +1,40 @@
+@media #{$media-rule-for-small-screen} {
+  .categories {
+    // Block model
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 1.5rem;
+
+    &__title {
+      // Typography
+      font-size: 1.12rem;
+    }
+    &__item {
+      --size-image-flag: 2.5rem;
+      --position-image-flag: bottom left;
+      // Block model
+      min-height: 11.38rem;
+      padding: 2.5rem 2rem 3rem;
+
+      &:hover {
+        // Other
+        transform: translateX(-7.5%);
+      }
+    }
+    &__japan {
+      // Decor
+      background-size: 75%, var(--size-image-flag);
+      background-position: right -51% bottom 19%, var(--position-image-flag);
+    }
+    &__china {
+      // Decor
+      background-size: 78%, var(--size-image-flag);
+      background-position: right -80% bottom 19%, var(--position-image-flag);
+    }
+    &__korea {
+      // Decor
+      background-size: 70%, var(--size-image-flag);
+      background-position: right -43% bottom 40%, var(--position-image-flag);
+    }
+  }
+}

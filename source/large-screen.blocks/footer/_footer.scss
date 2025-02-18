@@ -1,0 +1,79 @@
+@media #{$media-rule-for-large-screen} {
+  .footer {
+    &__top {
+      // Block model
+      padding-bottom: 4.45rem;
+      justify-content: flex-start;
+      gap: 4.7rem;
+    }
+    &__logo {
+      // Block model
+      width: 12.75rem;
+    }
+    &__column {
+      // Block model
+      // gap: 0.85rem;
+    }
+    &__column-title {
+      // Block model
+      padding-bottom: 1rem;
+    }
+
+    &__socials {
+      // Position
+      top: calc(100% - 5rem);
+      // Block model
+      gap: 1.25rem;
+    }
+    &__socials-link {
+      // Block model
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+    &__socials-whatsapp {
+      // Decor
+      background-size: 1.45rem;
+    }
+    &__socials-telegram {
+      // Decor
+      background-size: 1.25rem;
+    }
+    &__bottom {
+      // Block model
+      padding: 1.55rem 0;
+      // padding-top: 2.0rem;
+      // padding-top: 1.7rem;
+      // padding-bottom: 1.4rem;
+      // padding-bottom: 1.7rem;
+    }
+    &__business {
+      // Typography
+      line-height: 140%;
+    }
+    //             &__policity-link {
+    //                 // Typography
+    //                 text-decoration: underline;
+    //                 color: var(--text-color-third);
+    //             }
+    //         &__designer {
+    //             // Block model
+    //             display: flex;
+    //             // Typography
+    //             color: var(--text-color-third);
+    //         }
+    //             &__designer-link {
+    //                 // Block model
+    //                 display: block;
+    //                 width: 4.5rem;
+    //                 height: 2rem;
+    //                 margin-left: 0.8rem;
+    //                 // Decor
+    //                 background-image: url('../images/footer/__designer/designer.svg');
+    //                 background-size: contain;
+    //                 background-position: center;
+    //                 background-repeat: no-repeat;
+    //                 // Other
+    //                 transform: translate(0%, -16%);
+    //             }
+  }
+}

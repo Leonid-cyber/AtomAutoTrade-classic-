@@ -1,0 +1,23 @@
+@import "./library.blocks/reset/reset";
+@import "./library.blocks/sticky-footer/sticky-footer";
+// Base
+@import "project.blocks/vars/**/*.scss";
+@import "project.blocks/**/*.scss";
+
+// Blocks
+@import "common.blocks/**/*.scss";
+@import "large-screen.blocks/**/*.scss";
+@import "medium-screen.blocks/**/*.scss";
+@import "small-screen.blocks/**/*.scss";
+@import "extra-small-screen.blocks/**/*.scss";
+
+// Dependencies
+@import "project.blocks/dependencies/dependencies.scss";
+
+
+// @import "common.blocks/**/*.scss";
+// @import "extra-small-screen.blocks/**/*.scss";
+// @import "small-screen.blocks/**/*.scss";
+// @import "medium-screen.blocks/**/*.scss";
+// @import "large-screen.blocks/**/*.scss";
+// @import "common.blocks/**/*.scss";

@@ -1,0 +1,13 @@
+@media #{$media-rule-for-large-screen} {
+  .promise {
+    // Block model
+    padding: 2rem;
+    // padding: 1.95rem;
+
+    &--counter::before {
+      // Position
+      top: 1.7rem;
+      right: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,92 @@
+// --=== SLIDER-CARDS ===--
+.slider-cards {
+  // Position
+  display: flex;
+  flex-direction: column;
+
+  &__wrapper-items {
+    // Block model
+    width: 100%;
+    min-height: func-px-to-rem(474);
+    // height: 29.625rem;
+    display: grid;
+    grid-template-rows: 1fr;
+    // grid-auto-columns: calc( ( 100% - 1.5rem - 1.5rem) / 3 );
+    grid-auto-columns: calc((100% - (3 - 1) * 1.5rem) / 3);
+    grid-auto-flow: column;
+    gap: 1.5rem;
+    // Other
+    overflow: hidden;
+  }
+
+  &__wrapper-for-controls {
+    // Block model
+    margin-top: 2.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // Animation
+    transition: 0.5s ease-out opacity, 0.3s linear transform;
+
+    &--hidden {
+      // Decor
+      opacity: 0;
+      transform: translateY(-50%) scaleY(0%);
+    }
+  }
+  &__indicator {
+    // Position
+    position: relative;
+    // Block model
+    display: flex;
+    margin-right: 1.4rem;
+    align-items: center;
+    height: 0.5rem;
+    flex-grow: 1;
+    // Decor
+    background-color: #fff;
+    border-radius: 2rem;
+
+    &-filling {
+      // Position
+      position: absolute;
+      // Block model
+      width: 5%; // 23.8%;
+      height: 100%;
+      // Decor
+      background-color: var(--basic-color);
+      border-radius: 2rem;
+      // Animation
+      transition: all 0.5s ease-in-out;
+    }
+  }
+
+  &__control {
+    /* Block model */
+    margin-left: 0.6rem;
+    gap: 0.6rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    /* Typography */
+    /* Decor */
+    border: none;
+    border-radius: 50%;
+    background-position: center;
+    background-size: 0.5rem;
+    background-repeat: no-repeat;
+    background-color: var(--basic-color);
+    transition: all linear 0.2s;
+
+    &:hover {
+      cursor: pointer;
+      background-color: color-mix(in oklab, var(--basic-color) 80%, black 50%);
+    }
+  }
+  &__control-previous {
+    background-image: url("../images/slider-cards/__control/slider-arrow-left.svg");
+  }
+  &__control-next {
+    background-image: url("../images/slider-cards/__control/slider-arrow-right.svg");
+  }
+}

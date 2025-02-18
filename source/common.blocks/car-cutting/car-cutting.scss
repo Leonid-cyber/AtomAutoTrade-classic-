@@ -1,0 +1,28 @@
+.car-cutting {
+  // Block model
+  padding-top: func-px-to-rem(40);
+  display: flex;
+  flex-direction: column;
+  gap: func-px-to-rem(60);
+
+  &__item {
+    // Block model
+    display: flex;
+    flex-direction: column;
+    gap: func-px-to-rem(40);
+  }
+
+  &__wrapper-images {
+    // Block model
+    min-height: func-px-to-rem(320);
+    display: flex;
+    gap: func-px-to-rem(138);
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item-image {
+    // Block model
+    width: 35%;
+  }
+}

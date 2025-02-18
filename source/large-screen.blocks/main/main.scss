@@ -1,0 +1,62 @@
+@media #{$media-rule-for-large-screen} {
+  .main {
+    // Block model
+    padding-top: 1.3rem;
+
+    &__wrapper-text-block {
+      // Position
+      top: 0.66rem;
+    }
+
+    &__content-block-wrapper {
+      // Block model
+      height: 22.45rem;
+    }
+
+    &__main-image {
+      // Position
+      right: -1.8rem;
+      // Block model
+      width: 98.8%;
+    }
+
+    &__feature {
+      // Decor
+      border-radius: 0.56rem;
+
+      &--text-bold {
+        // Typography
+        font-size: 0.62rem;
+        // color: var(--text-color-first);
+      }
+
+      &-condition {
+        // Position
+        top: 20%;
+
+        &-image {
+        }
+
+        &-text {
+          // Typography
+          font-size: 0.62rem;
+        }
+      }
+
+      &-sanction {
+        // Position
+        bottom: -2.1%;
+
+        &-image {
+          // Block model
+          width: 18.5%;
+        }
+
+        &-text {
+          // Typography
+          font-size: 0.62rem;
+        }
+      }
+    }
+  }
+}

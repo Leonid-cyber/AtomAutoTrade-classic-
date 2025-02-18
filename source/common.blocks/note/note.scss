@@ -1,0 +1,25 @@
+.note {
+  // Block model
+  padding: func-px-to-rem(0, 40);
+  // Decor
+  border-radius: 1.25rem;
+  background-color: var(--basic-color);
+
+  &__inner {
+    // Block model
+    padding: func-px-to-rem(35, 0, 35, 56);
+    // Decor
+    background-image: url("../images/note/__inner/warning.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 2.25rem;
+  }
+
+  &__title {
+    // Typography
+    font-family: "Museo Sans Cyrl 700";
+    text-transform: uppercase;
+    color: var(--text-color-third);
+    text-align: justify-all;
+  }
+}

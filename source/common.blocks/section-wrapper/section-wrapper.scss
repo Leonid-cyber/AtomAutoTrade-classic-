@@ -1,0 +1,47 @@
+.section-wrapper {
+  // Block model
+  // padding-top: calc((100 / 16) * 1rem);
+  padding-top: func-px-to-rem(100);
+  // 100 100 80 60 60
+
+  // 60 60 60 60 60
+
+  // большие блоки контента
+  // 60 60 40 60 60
+
+  // 80 113 125 60 60
+
+  &--padding-top-small {
+    // 60 60 60 40 40
+    // Block model
+    // padding-top: calc((60 / 16) * 1rem);
+    padding-top: func-px-to-rem(60);
+  }
+  &--padding-top-constant {
+    // Block model
+    // padding-top: calc((60 / 16) * 1rem);
+    padding-top: func-px-to-rem(60);
+  }
+  &__content {
+    // Block model
+    // padding-top: calc((48 / 16) * 1rem);
+    padding-top: func-px-to-rem(48);
+    // width: 100%;
+    // display: flex;
+    // flex-direction: column;
+    // gap: 60px;
+    // justify-content: space-between;
+  }
+  .section-wrapper__content + .section-wrapper__content {
+    // 60 40 32 32 32
+    padding-top: func-px-to-rem(60);
+  }
+  // На странице со схемой покупки испольховать __content для блоков
+}
+
+// .section-content:has(.visible-box) + .visible-box {
+//   // Block model
+//   padding-top: 60px;
+//   background-color: gray;
+//   box-shadow: 0 0 100px gray;
+// }

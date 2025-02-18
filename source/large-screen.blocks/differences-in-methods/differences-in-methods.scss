@@ -1,0 +1,56 @@
+@media #{$media-rule-for-large-screen} {
+  .differences-in-methods {
+    // // Position
+    // position: relative;
+    // z-index: -2;
+    // Block model
+    box-sizing: border-box;
+    padding: func-px-to-rem(60, 456, 60, 52);
+
+    &--padding-small {
+      // Block model
+      padding: func-px-to-rem(60, 395, 60, 52);
+    }
+
+    // &__text {
+    //   // Block model
+    //   width: 42.5%;
+    //   // padding-bottom: 1.5rem;
+    // }
+
+    &__button {
+      // Block model
+      // max-width: 19.94rem;
+      // max-width: 20.5rem;
+      max-width: max-content;
+      min-height: 3.38rem;
+      // gap: func-px-to-rem(10);
+
+      &-image {
+        // Block model
+        // margin-left: -0.5rem;
+      }
+      &-text {
+        // Typography
+        font-size: 0.94rem;
+      }
+    }
+
+    &__image {
+      // Position
+      //   z-index: -1;
+      //   position: absolute;
+      right: 2.1%;
+      bottom: 8.5%;
+      //   // Block model
+      //   display: block;
+      width: calc((455 / 888) * 100%);
+    }
+    &__image-2 {
+      // Block model
+      width: calc((501 / 888) * 100%);
+      // Other
+      transform: translate(func-px-to-rem(35), func-px-to-rem(52));
+    }
+  }
+}

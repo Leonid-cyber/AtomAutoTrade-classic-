@@ -1,0 +1,82 @@
+.order-a-purchase {
+  // Position
+  position: relative;
+  // Block model
+  padding: 4.65rem 4.4375rem;
+  // padding-right: 36.5rem;
+
+  // &--small-padding {
+  //   padding: func-px-to-rem(60, 71);
+  // }
+
+  &__wrapper-content {
+    // Position
+    position: relative;
+    z-index: 1;
+    // Block model
+    width: 47.4%;
+  }
+
+  &__title {
+    // Block model
+    width: 47.4%;
+    // padding-bottom: 1.5rem;
+  }
+
+  &__text {
+    // Block model
+    width: 42.5%;
+    // padding-bottom: 1.5rem;
+  }
+
+  &__button {
+    // Block model
+    max-width: 13.56rem;
+    min-height: 3.38rem;
+
+    &--large-width {
+      // Block model
+      max-width: 21.19rem;
+    }
+
+    &-image {
+      // Block model
+      margin-left: -0.1rem;
+    }
+    &-text {
+    }
+  }
+
+  &__image-japan {
+    // Position
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    // Block model
+    width: 60.66%;
+  }
+  &__image-korea {
+    // Position
+    position: absolute;
+    right: 4.5%;
+    bottom: 0%;
+    // Block model
+    width: 51.5%;
+  }
+  &__image-china {
+    // Position
+    position: absolute;
+    right: 0%;
+    bottom: 0;
+    // Block model
+    width: 62.6%;
+  }
+  // &__image-disassembled {
+  //   // Position
+  //   position: absolute;
+  //   right: 0%;
+  //   bottom: 9%;
+  //   // Block model
+  //   width: 56.3%;
+  // }
+}

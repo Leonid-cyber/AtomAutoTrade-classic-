@@ -1,0 +1,12 @@
+@media #{$media-rule-for-medium-screen} {
+  .note {
+    // Block model
+    padding: func-px-to-rem(0, 86);
+
+    &__inner {
+      // Block model
+      padding-top: func-px-to-rem(26);
+      padding-bottom: func-px-to-rem(26);
+    }
+  }
+}

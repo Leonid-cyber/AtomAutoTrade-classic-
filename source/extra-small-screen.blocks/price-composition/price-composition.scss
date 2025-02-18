@@ -1,0 +1,143 @@
+@media #{$media-rule-for-extra-small-screen} {
+
+.price-composition {
+
+    &__text-block{
+        // Block model
+        padding-bottom: 2rem;
+        flex-direction: column;
+        gap: 1.05rem;
+        gap: 1rem;
+
+        &-title {
+            // Block model
+            padding-top: 0;
+            width: 100%;
+            // Typography
+            font-size: 1.25rem;
+            line-height: 120%;
+
+            // &--large-title {
+            //     // Block model
+            //     flex-grow: 0;
+            //     flex-shrink: 0;
+            //     min-width: initial;
+            //     max-width: initial;
+            //     width: 36%;
+            //     // Typography
+            //     font-size: 2rem;
+            // }
+        }
+        &-text {
+            // Block model
+            width: 100%;
+            // Typography
+            font-size: 0.88rem;
+            line-height: 140%;
+
+            // &--large-width{
+            //     // Block model
+            //     width: 46%;
+            //     width: 47%;
+            // }
+        }
+    }
+
+    &__components {
+        // Position
+        position: relative;
+        left: -1.5rem;
+        // Block model
+        padding: 0 1.5rem;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, min-content) 15rem;
+        grid-auto-rows: min-content;
+        gap: 1.52rem 0;
+        // Decor
+        background-position: top 34.4% center, top 23.6% center;
+        background-size: 116%, 285%;
+
+        &--background-japan {
+            // Decor
+            background-position: top 34.4% center, top 23.6% center;
+            background-size: 116%, 285%;
+        }
+
+        &--background-china {
+            // Decor
+            background-position: top 34.4% center, top 23.6% center;
+            background-size: 116%, 285%;
+        }
+        &--background-korea {
+            // Decor
+            background-position: top 34.4% center, top 23.6% center;
+            background-size: 116%, 285%;
+        }
+
+        // А нужно ли? Если он везде на месте, то нужно
+        &--background-circle {
+            // // Decor
+            // background-image:
+            // url('../../images/price-composition/__columns/--korea/korea-car.png'),
+            // url('../../images/price-composition/circles.svg');
+            // background-size: 39.6rem, 56rem;
+        }
+    }
+        &__component {
+            // Block model
+            padding: 6.125rem 1.25rem 2rem;
+            // Decor
+            background-position: top 1.9rem left 1.25rem;
+            background-size: 3.4rem;
+
+            &-title {
+                // Block model
+                width: 100%;
+                // Typorgaphy
+                font-size: 1rem;
+                line-height: 140%;
+            }
+
+            &-text {
+                // Block model
+                width: 100%;
+                // Typorgaphy
+                font-size: 0.88rem;
+                line-height: 140%
+            }
+
+            &-collapse-text {
+                // Block model
+                display: none;
+            }
+            
+        }
+
+        &__component-empty {
+            // Block model
+            display: block;
+        }
+            
+
+    // &__wrapper-images {
+    //     // Block model
+    //     padding-top: 1.4rem;
+    //     display: grid;
+    //     grid-template-columns: repeat(3, 1fr);
+    //     column-gap: 1.5rem;
+    // }
+    //     &__image {
+    //         // Block model
+    //         width: 100%;
+    //         height: 100%;
+    //         object-fit: contain;
+    //         // Decor
+    //         border-radius: 2.5rem;
+    //     }
+}
+// .price-composition__component {
+//     background-color: gold;
+// }
+
+}

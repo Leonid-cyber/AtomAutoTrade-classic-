@@ -1,0 +1,31 @@
+@media #{$media-rule-for-extra-small-screen} {
+  .text-block {
+    &__title {
+      // Block model
+      padding-bottom: 1rem;
+
+      &--image {
+        // Position
+        right: 0;
+        // Block model
+        width: 2.5rem;
+        // Decor
+        transform: translateX(-100%);
+      }
+    }
+    &__subtitle {
+      // Block model
+      padding-bottom: 0.875rem;
+    }
+    &__text {
+      &--width-80 {
+        // Block model
+        width: 101%;
+      }
+    }
+    &__previous-arrow {
+      // Block model
+      gap: func-px-to-rem(6);
+    }
+  }
+}

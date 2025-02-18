@@ -1,0 +1,7 @@
+@media #{$media-rule-for-medium-screen} {
+  .promises {
+    // Block model
+    grid-template-columns: repeat(2, 1fr);
+    // grid-template-rows: repeat(2, auto);
+  }
+}

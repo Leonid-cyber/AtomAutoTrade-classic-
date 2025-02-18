@@ -1,0 +1,120 @@
+.promise {
+  &--flex-row {
+    background-color: red;
+    box-shadow: 0 0 5px red;
+  }
+  &--align-center {
+    background-color: red;
+    box-shadow: 0 0 5px red;
+  }
+  &--min-height {
+    background-color: red;
+    box-shadow: 0 0 5px red;
+  }
+
+  &__image {
+    background-color: red;
+    box-shadow: 0 0 5px red;
+
+    &--very-large {
+      background-color: red;
+      box-shadow: 0 0 5px red;
+    }
+
+    &--large {
+      background-color: red;
+      box-shadow: 0 0 5px red;
+    }
+
+    &--medium {
+      background-color: red;
+      box-shadow: 0 0 5px red;
+    }
+
+    &--tiny {
+      background-color: red;
+      box-shadow: 0 0 5px red;
+    }
+  }
+
+  &__wrapper-text-content {
+    background-color: red;
+    box-shadow: 0 0 5px red;
+  }
+
+  &__title {
+    &--no-padding {
+      background-color: red;
+      box-shadow: 0 0 5px red;
+    }
+  }
+  // &__text{
+  // }
+
+  // &__list {
+
+  //     &-item {
+
+  //     }
+  // }
+}
+
+.promise {
+  // Position
+  position: relative;
+  // Block model
+  padding: 2.5rem;
+  // Other
+  counter-increment: promise1-counter 1;
+
+  &--large-padding-bottom {
+    // Block model
+    padding-bottom: 4.375rem;
+  }
+
+  &--counter::before {
+    // Position
+    position: absolute;
+    // top: 2.3rem;
+    // top: 2rem;
+    top: 1.55rem;
+    right: 2.5rem;
+    // Block model
+    display: block;
+    // Typography
+    content: "" counter(promise1-counter) "";
+    color: #eaeaea;
+    font-size: 3.12rem;
+    font-family: RF Dewi Expanded;
+    font-weight: 900;
+  }
+  // 40 -16
+  // 52 - 24
+  // 76 - 24
+  &__image-small {
+    // Block model
+    display: block;
+    padding-bottom: 1rem;
+    width: 2.5rem;
+    aspect-ratio: 1;
+    // Decor
+    object-fit: contain;
+  }
+
+  &__image-large {
+    // Block model
+    display: block;
+    padding-bottom: 1.5rem;
+    width: 3.25rem;
+    aspect-ratio: 1;
+    // Decor
+    object-fit: contain;
+  }
+
+  &__very-large {
+    // Block model
+    padding-bottom: 1.5rem;
+    width: 4.75rem;
+    box-shadow: 0 0 20px pink;
+  }
+}

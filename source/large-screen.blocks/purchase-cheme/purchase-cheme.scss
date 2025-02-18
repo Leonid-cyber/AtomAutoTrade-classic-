@@ -1,0 +1,9 @@
+@media #{$media-rule-for-large-screen} {
+
+.purchase-cheme {
+    // Block model
+    grid-template-rows: repeat(2, auto);
+    gap: 1.6rem;
+}
+
+}

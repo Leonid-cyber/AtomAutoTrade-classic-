@@ -1,0 +1,36 @@
+@media #{$media-rule-for-large-screen} {
+  // @media screen and (min-width: $large-screen) {
+
+  .header {
+    &__top {
+      // Block model
+      padding-top: 1.05rem;
+      padding-bottom: 1.2rem;
+    }
+
+    &__socials {
+      // Block model
+      display: none;
+    }
+
+    &__phone-numbers {
+      // Block model
+      padding-right: 2.1rem;
+    }
+    // &__wrapper-button-auction {
+    // Block model
+    // width: 9.62rem;
+    // height: 3rem;
+    // margin-right: 0.7rem;
+    // background-color: gold;
+    // flex-grow: 0;
+    // flex-shrink: 0;
+    // }
+    // &__button-auction {
+    //   &-image {
+    //   }
+    //   &-text {
+    //   }
+    // }
+  }
+}

@@ -1,0 +1,24 @@
+@media #{$media-rule-for-medium-screen} {
+
+.nav {
+    // Block model
+    gap: 1.7rem;
+
+    &__link {
+        // Typography
+        font-size: 0.88rem;
+    }
+
+    &__link-with-popup {
+        // Block model
+        padding-right: 1.25rem;
+    }  
+}
+
+}
+// Position
+// Block model
+// Typography
+// Decor
+// Animation
+// Other

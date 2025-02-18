@@ -1,0 +1,124 @@
+@media #{$media-rule-for-extra-small-screen} {
+
+.menu-popular {
+    // Position
+    top: 0;
+    left: -100%;
+    // Block model
+    height: 100vh;
+    padding-top: 2.5rem;
+    padding-bottom: 4.5rem;
+    transition: 0.3s all ease-in-out;
+
+    &--show {
+        // Position
+        left: 0;
+        box-shadow: 0 0 50px var(--basic-color);
+    }
+
+    &__inner{
+        // Position
+        left: -1.1%;
+        // Block model
+        flex-direction: column;
+        gap: 3.45rem;
+    }
+
+        &__logo {
+            // Block model
+            display: none;
+        }
+
+        &__content {
+            // Block model
+            gap: 3.1rem;
+
+            &-top {
+                // Block model
+                max-height: 16.7rem;
+                // max-height: 20rem;
+                display: flex;
+                flex-direction: column;
+                // align-items: flex-start;
+                flex-wrap: wrap;
+                gap: 3.6rem 0.8rem;
+            }
+
+            &-bottom {
+                // Block model
+                display: flex;
+                flex-direction: column;
+                gap: 1.4rem;
+            }
+        }
+
+            &__column {
+                // Block model
+                gap: 1.2rem;
+                align-items: flex-start;
+
+                &-link {
+                    // Typography
+                    font-size: 0.75rem;
+
+                    &-background {
+                        // Block model
+                        padding-left: 1.75rem;
+                        // Decor
+                        background-size: 1.15rem;
+                    }
+                }
+
+                // &-contact {
+                //     // Position
+                //     // position: relative;
+                //     // Typography
+                //     font-size: 1rem;
+                //     // color: var(--text-color-third);
+                // }
+                                
+            }
+
+            &__contacts-column {
+                // Block model
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.6rem 2rem;
+            }
+
+                &__contact {
+                    // Position
+                    // left: 2.5%;
+                    // left: -2.5%;
+                    left: 0;
+                    // Typography
+                    font-size: 0.75rem;
+
+                    &::after {
+                        // Position
+                        right: -1rem;
+                        // Block model
+                        height: 0.75rem;
+                    }
+                }
+
+    &__close-menu {
+        // Position
+        top: -4.1%;
+        right: 2.9%;
+        padding: 1rem;
+        // Decor
+        // width: 1.125rem;
+        background-size: 1.125rem;
+        
+        &:active {
+            // Animation
+            transform: scale(150%);
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 1rem;
+        }
+    }
+}
+
+}

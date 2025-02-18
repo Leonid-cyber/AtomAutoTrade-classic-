@@ -1,0 +1,48 @@
+.on-screen-navigation {
+    // Position
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    z-index: 10;
+    // Block model
+    width: 5rem;
+    height: 5rem;
+    // Decor
+    // background-color: red;
+    opacity: 0.8;
+    border-radius: 3rem;
+    background-color: var(--text-color-third);
+    // box-shadow: 0px 0px 15px var(--text-color-third);
+
+    &__image-go-top {   
+        width: 100%;  
+        transform: rotate(-90deg) scale(102%);
+        transition: 0.3s ease all;
+
+        &:hover{
+            cursor: pointer;
+            animation-name: arrow-swing;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay: 0ms;
+        }
+    }
+}
+@keyframes arrow-swing {
+    from {
+        transform: rotate(-90deg) scale(102%);
+    }
+    25% {
+        transform: rotate(-80deg) scale(102%);
+    }
+    50%{
+        transform: rotate(-90deg) scale(102%);
+    }
+    75% {
+        transform: rotate(-100deg) scale(102%);
+    }
+    to {
+        transform: rotate(-90deg) scale(102%);
+    }
+  }

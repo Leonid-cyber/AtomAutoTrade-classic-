@@ -1,0 +1,62 @@
+@media #{$media-rule-for-small-screen} {
+  .differences-in-methods {
+    // // Position
+    // position: relative;
+    // z-index: -2;
+    z-index: 1;
+    // Block model
+    // box-sizing: border-box;
+    // padding: func-px-to-rem(40, 323, 40, 33);
+    padding: func-px-to-rem(36, 32, 335);
+
+    &--padding-small {
+      // Block model
+      padding: func-px-to-rem(36, 32, 344);
+    }
+
+    &__text {
+      // Block model
+      // padding-bottom: func-px-to-rem(24);
+      // Typography
+      font-size: 1rem;
+    }
+
+    &__button {
+      // Block model
+      max-width: 100%;
+      width: 100%;
+      // background-color: gold;
+      min-height: 3rem;
+
+      &--large-height {
+        // Block model
+        min-height: 3rem;
+      }
+
+      &-image {
+        // Block model
+        width: func-px-to-rem(20);
+      }
+      &-text {
+        // Typography
+        font-size: 0.88rem;
+      }
+    }
+
+    &__image {
+      // Position
+      bottom: 3.5%;
+      right: 50%;
+      // Block model
+      width: 100%;
+      // Other
+      transform: translateX(50%);
+    }
+    &__image-2 {
+      // Block model
+      width: 100%;
+      // Other
+      transform: translate(func-px-to-rem(0), func-px-to-rem(40));
+    }
+  }
+}

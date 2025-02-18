@@ -1,0 +1,33 @@
+@media #{$media-rule-for-extra-small-screen} {
+  .text-block-with-button {
+    &__title {
+      // Block model
+      padding-bottom: 1rem;
+      width: 100%;
+      // background-color: gold;
+      // Typography
+      font-size: 1.25rem;
+    }
+    &__text {
+      // Block model
+      width: 100%;
+      padding-bottom: 1.5rem;
+      // Typography
+      font-size: 0.88rem;
+    }
+    &__button {
+      // Block model
+      width: 12.19rem;
+      min-height: 2.88rem;
+
+      &-image {
+        // Block model
+        width: 1.125rem;
+      }
+      &-text {
+        // Typography
+        font-size: 0.88rem;
+      }
+    }
+  }
+}

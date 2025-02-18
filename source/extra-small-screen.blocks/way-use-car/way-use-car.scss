@@ -1,0 +1,22 @@
+@media #{$media-rule-for-extra-small-screen} {
+  .way-use-car {
+    // Block model
+    // flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+
+    &__item {
+      // Block model
+      padding: func-px-to-rem(32, 20);
+      flex-direction: column;
+      // Decor
+      // border-radius: 2.5rem;
+
+      &-image {
+        // Block model
+        width: func-px-to-rem(64);
+      }
+    }
+  }
+}

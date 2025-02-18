@@ -1,0 +1,34 @@
+.description-method {
+  &__text-block {
+    // Block model
+    display: flex;
+    justify-content: space-between;
+
+    &-title {
+      // Block model
+      width: 36.7%;
+    }
+    &-text {
+      // Block model
+      width: 46.1%;
+      // width: 38.98%;
+      // Typography
+      text-wrap: balance;
+    }
+  }
+  &__wrapper-images {
+    // Block model
+    padding-top: func-px-to-rem(80);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    // column-gap: func-px-to-rem(24);
+    gap: func-px-to-rem(24);
+  }
+  &__image {
+    // Block model
+    width: 100%;
+    object-fit: contain;
+    // Decor
+    border-radius: 2.5rem;
+  }
+}

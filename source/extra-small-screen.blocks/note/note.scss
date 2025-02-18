@@ -1,0 +1,18 @@
+@media #{$media-rule-for-extra-small-screen} {
+  .note {
+    // Block model
+    padding: func-px-to-rem(0, 30);
+
+    &__inner {
+      // Block model
+      padding: func-px-to-rem(20, 0, 20, 50);
+      // Decor
+      background-position: left top func-px-to-rem(20);
+    }
+
+    &__title {
+      // Typography
+      font-size: 0.75rem;
+    }
+  }
+}

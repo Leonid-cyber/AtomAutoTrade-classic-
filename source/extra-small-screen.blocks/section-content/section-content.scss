@@ -1,0 +1,89 @@
+@media #{$media-rule-for-extra-small-screen} {
+
+.section-content {
+    // Block model
+    padding-bottom: 3.75rem;
+
+    &--small-padding-top {
+        // Block model
+        margin-top: -1.25rem;
+        // padding-top: 2.5rem;
+    }
+
+    &__text-wrapper {
+        // Block model
+        // gap: 1.05rem;
+        gap: 1rem;
+        margin-bottom: 2rem;
+
+        &--no-margin {
+            // margin: 0;
+        }
+    }
+        &__title {
+            // Block model
+            // width: 87%;
+            // width: 95%;
+            width: 100%;
+            // text-wrap: balance;
+
+            &-image {
+                // Position
+                // position: relative;
+                // top: 0.75rem;
+                // right: -0.7rem;
+                // // Block model
+                // width: 3.75rem;
+            }
+        }
+
+        &__text {
+            // Block model
+            width: 105%;
+            // font-size: 0.88rem;
+            // Typograhy
+            line-height: 140%;
+            // width: 100%;
+            // background-color: gold;
+            // Typograhy
+            // text-wrap: balance;
+            // background-color: gold;
+
+            // &--short {
+                // Block model
+                // width: 55.4%;
+                // Typograhy
+                // background-color: gold;
+                // text-wrap:initial;
+            // }
+        }
+
+        // &__previous-page {
+        //     // Block model
+        //     display: block;
+        //     width: max-content;
+        //     padding: 0.45rem;
+        //     padding-left: 1.7rem;
+        //     // Typograhy
+        //     color: var(--text-color-second);
+        //     font-size: 1rem;
+        //     font-family: 'Museo Sans Cyrl 700';
+        //     text-transform: uppercase;
+        //     // Decor
+        //     background-image: url('../../images/section-content/__previous-page/Arrow.svg');
+        //     background-repeat: no-repeat;
+        //     background-position: left 0.4rem center;
+        //     // Animation
+        //     transition: all 0.3s linear;
+
+        //     &:hover{
+        //         // Typograhy
+        //         color: var(--basic-color);
+        //     }
+        // }
+
+&__content-wrapper {
+}
+}
+
+}

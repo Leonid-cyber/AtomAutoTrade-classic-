@@ -1,0 +1,16 @@
+@media #{$media-rule-for-large-screen} {
+  .car-sales-and-card {
+    // Block model
+    gap: func-px-to-rem(58);
+
+    &__additional-images-wrapper {
+      // Block model
+      gap: func-px-to-rem(8);
+    }
+
+    &__text-block {
+      // Block model
+      padding-top: func-px-to-rem(16);
+    }
+  }
+}

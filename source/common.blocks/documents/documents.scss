@@ -1,0 +1,53 @@
+.documents {
+  // Block model
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: func-px-to-rem(24);
+
+  &__item {
+    // Block model
+    padding: func-px-to-rem(38, 32, 38, 40);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: func-px-to-rem(40);
+
+    &-list {
+      // Block model
+      display: flex;
+      flex-direction: column;
+      gap: func-px-to-rem(6);
+    }
+    &-text {
+      // Block model
+      display: flex;
+      align-items: center;
+      gap: func-px-to-rem(10);
+
+      &::before {
+        // Position
+        position: relative;
+        vertical-align: middle;
+        // Block model
+        display: inline-block;
+        width: func-px-to-rem(18);
+        aspect-ratio: 1;
+        // Decor
+        background-image: url("../images/documents/__item-text/arrow.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        // Other
+        content: "";
+      }
+    }
+
+    &-image {
+      // Block model
+      width: 57%;
+      object-fit: contain;
+    }
+  }
+}

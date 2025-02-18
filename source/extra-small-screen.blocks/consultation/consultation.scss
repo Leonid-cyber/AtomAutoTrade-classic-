@@ -1,0 +1,80 @@
+@media #{$media-rule-for-extra-small-screen} {
+  .consultation {
+    // Block model
+    padding: 2.25rem 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+
+    &__text-block {
+      // Block model
+      width: 100%;
+      padding-bottom: 1.5rem;
+
+      &-title {
+        // Block model
+        width: 100%;
+        padding-bottom: 1rem;
+      }
+
+      &-text {
+        // Block model
+        width: 100%;
+      }
+    }
+
+    &__form {
+      // Block model
+      padding-top: 1.5rem;
+      width: 100%;
+
+      &-fields {
+        // Block model
+        padding-bottom: 1.5rem;
+        gap: 0.97rem;
+        grid-template-areas:
+          "field-name"
+          "field-number"
+          "field-model";
+      }
+
+      &-send {
+        // Block model
+        flex-direction: column-reverse;
+        gap: 0;
+
+        &-policity {
+          // Block model
+          width: 87%;
+          // Typography
+          font-size: 0.75rem;
+        }
+
+        // &-wrapper-button {
+        //   // Block model
+        //   padding-bottom: 1.125rem;
+        //   width: 100%;
+        //   height: 1px;
+        //   min-height: 3.38rem;
+        // }
+        &-button {
+          // Block model
+          width: 100%;
+          margin-bottom: 1.125rem;
+          padding-left: 0.6rem;
+          padding-right: 0.6rem;
+          gap: 0.3125rem;
+
+          &-image {
+            // Block model
+            width: 1.125rem;
+          }
+          &-text {
+            // Typography
+            font-size: 0.88rem;
+          }
+        }
+      }
+    }
+  }
+}

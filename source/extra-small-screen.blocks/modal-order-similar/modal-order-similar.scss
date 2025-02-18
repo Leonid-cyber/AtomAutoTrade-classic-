@@ -1,0 +1,82 @@
+@media #{$media-rule-for-extra-small-screen} {
+  .modal-order-similar {
+    &__inner {
+      // Block model
+      max-height: 100vh;
+      flex-direction: column;
+      gap: func-px-to-rem(20);
+      // Decor
+      overflow-y: auto;
+
+      &--small-padding {
+        // Block model
+        padding: func-px-to-rem(66, 20, 30, 20);
+      }
+
+      &--large-padding {
+        // Block model
+        padding: func-px-to-rem(32, 20);
+      }
+    }
+
+    &__text-block-wrapper {
+      // Block model
+      width: func-px-to-rem(232);
+    }
+
+    &__title {
+      // Block model
+      width: 80%;
+    }
+
+    &__business {
+      // Block model
+      padding-top: func-px-to-rem(16);
+      // Typography
+      text-align: center;
+      font-size: func-px-to-rem(10);
+    }
+    &__close-icon {
+      // Position
+      top: func-px-to-rem(24);
+      right: func-px-to-rem(24);
+      // Block model
+      width: func-px-to-rem(20);
+    }
+
+    &__card-auto {
+      // Block model
+      box-sizing: border-box;
+      width: func-px-to-rem(232);
+      padding: func-px-to-rem(20);
+    }
+
+    &__image {
+      // Block model
+      width: func-px-to-rem(70);
+    }
+
+    &__subtitle {
+      // Block model
+      padding-top: func-px-to-rem(16);
+    }
+    &__characteristics {
+      // Block model
+      padding-top: func-px-to-rem(6);
+    }
+    &__item-tags {
+      // Block model
+      padding-top: func-px-to-rem(16);
+    }
+    &__item-tag {
+      // Block model
+      font-size: 0.5rem;
+    }
+    &__price {
+      // Block model
+      padding-top: func-px-to-rem(16);
+      // Typography
+      font-size: func-px-to-rem(18);
+    }
+  }
+}

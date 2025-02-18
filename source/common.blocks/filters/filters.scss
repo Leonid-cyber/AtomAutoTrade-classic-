@@ -1,0 +1,82 @@
+// Filters
+.filters {
+  // Block model
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 2.5rem;
+  justify-content: space-between;
+
+  &--display-none {
+    // Block model
+    display: none;
+  }
+
+  &__type-of-cars {
+    // Block model
+    display: flex;
+    gap: 0.62rem;
+  }
+  &__country {
+    // Block model
+    display: flex;
+    align-items: flex-start;
+    gap: 0.62rem;
+  }
+
+  &__input {
+    // Block model
+    display: none;
+  }
+  &__item {
+    // Block model
+    padding: 0 0.81rem;
+    min-height: 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // Decor
+    cursor: pointer;
+    border: none;
+    border-radius: 3.5rem;
+    background-color: var(--text-color-third);
+    // Animation
+    transition: 0.3s ease-out all;
+
+    &-wrapper-image {
+      // Block model
+      width: 1.35rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &-image {
+      // Block model
+      object-fit: contain;
+    }
+
+    &-text {
+      // Block model
+      padding-left: 0.6rem;
+    }
+  }
+
+  &__input:checked + .filters__item {
+    // Decor
+    background-color: var(--basic-color);
+  }
+  &__input:checked + .filters__item > .filters__item-text {
+    // Typography
+    color: var(--text-color-third);
+  }
+  &__type-of-cars
+    > .filters__input:checked
+    + .filters__item
+    > .filters__item-wrapper-image
+    > .filters__item-image {
+    // Decor
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2%)
+      hue-rotate(339deg) brightness(109%) contrast(101%);
+    // Animation
+    transition: 0.2s ease-out all;
+  }
+}

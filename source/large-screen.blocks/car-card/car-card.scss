@@ -1,0 +1,79 @@
+// @media screen and (min-width: $large-screen) and (max-width: $extra-large-screen) {
+@media #{$media-rule-for-large-screen} {
+  .car-card {
+    // Block model
+    // width: 17.5rem;
+
+    &__advantage {
+      // Position
+      top: 0.75rem;
+      right: 0.56rem;
+      // Block model
+      max-width: 42.2%;
+      padding: 0.625rem 1.3125rem;
+      // Typography
+      font-size: 0.62rem;
+      line-height: 117%;
+    }
+
+    &__image {
+      // Block model
+      padding-bottom: 1.5rem;
+      width: 100%;
+      height: 11.25rem;
+      object-fit: cover;
+    }
+
+    // &__text-wrapper{
+    //     // Block model
+    //     padding: 0rem 2rem 1.5rem 2rem;
+    // }
+
+    //     &__title {
+    //         // Block model
+    //         // padding-top: 1.2rem;
+    //     }
+    //     &__characteristics {
+    //         // Block model
+    //         padding-top: 0.45rem;
+    //         color: #585858;
+    //     }
+    &__tags {
+      // Block model
+      padding-bottom: 1.1rem;
+    }
+
+    //         &__tag {
+    //             /* Block model */
+    //             padding: 0.63rem 0.9rem;
+    //             /* Typography */
+    //             color: #7D7D7D;
+    //             font-size: 0.75rem;
+    //             /* Decor */
+    //             background-color: #EFEFEF;
+    //             border-radius: 0.62rem;
+    //         }
+    &__price {
+      // Typography
+      font-size: 1.38rem;
+    }
+
+    &__button {
+      &-image {
+      }
+      &-text {
+        // Typography
+        font-size: 0.94rem;
+      }
+    }
+    //     &--padding-top-bottom-large{
+    //         padding-top: 0.35rem;
+    //         padding-bottom: 0.7rem;
+    //     }
+
+    //     &__add {
+    //         opacity: 1;
+    //         transform: translateY(0%) scaleX(100%);
+    //     }
+  }
+}

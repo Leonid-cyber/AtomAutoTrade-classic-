@@ -1,0 +1,8 @@
+@media #{$media-rule-for-small-screen} {
+  .field-form {
+    &::placeholder {
+      // Typography
+      font-size: 0.88rem;
+    }
+  }
+}

@@ -1,0 +1,118 @@
+@media #{$media-rule-for-medium-screen} {
+  .price-composition {
+    // Block model
+    // padding-top: 6.2rem;
+
+    &__text-block {
+      // Block model
+      // padding-top: 0.1rem;
+      // width: 100%;
+      // padding-bottom: 3.7rem;
+      // display: flex;
+      // justify-content: space-between;
+
+      &-title {
+        // Block model
+        // padding-top: 0.0rem;
+        // flex-grow: 0;
+        // flex-shrink: 0;
+        // width: 51%;
+        width: 48%;
+        // // min-width: 41%;
+        // // max-width: 51%;
+        // Typography
+        font-size: 1.25rem;
+        line-height: 120%;
+        // font-size: 1.75rem;
+
+        // &--large-title {
+        //     // Block model
+        //     flex-grow: 0;
+        //     flex-shrink: 0;
+        //     min-width: initial;
+        //     max-width: initial;
+        //     width: 36%;
+        //     // Typography
+        //     font-size: 2rem;
+        // }
+      }
+      &-text {
+        // Block model
+        padding-top: 0.15rem;
+        width: 40.2%;
+        width: 39.5%;
+        // Typography
+        font-size: 0.88rem;
+        line-height: 140%;
+        // flex-grow: 0;
+        // flex-shrink: 0;
+        // width: 34%;
+
+        // &--large-width{
+        //     // Block model
+        //     width: 46%;
+        //     width: 47%;
+        // }
+      }
+    }
+
+    &__components {
+      // Block model
+      grid-template-columns: repeat(2, 30.9%);
+      gap: 1.55rem 0;
+      // Decor
+
+      &--background-japan {
+        // Decor
+        background-size: 56%, 138%;
+      }
+
+      &--background-china {
+        // Decor
+        background-size: 56%, 138%;
+      }
+      &--background-korea {
+        // Decor
+        background-size: 56%, 138%;
+      }
+    }
+    &__component {
+      // Block model
+      padding: 6.125rem 2rem 0.625rem;
+      padding: 6.125rem 2rem 2rem;
+      // Decor
+      background-position: top 1.9rem left 1.9rem;
+      background-size: 3.4rem;
+
+      &-title {
+        // Block model
+        width: 100%;
+        // Typorgaphy
+        font-size: 1rem;
+        line-height: 140%;
+      }
+
+      &-text {
+        // Typorgaphy
+        font-size: 0.88rem;
+        line-height: 140%;
+      }
+    }
+
+    // &__wrapper-images {
+    //     // Block model
+    //     padding-top: 1.4rem;
+    //     display: grid;
+    //     grid-template-columns: repeat(3, 1fr);
+    //     column-gap: 1.5rem;
+    // }
+    //     &__image {
+    //         // Block model
+    //         width: 100%;
+    //         height: 100%;
+    //         object-fit: contain;
+    //         // Decor
+    //         border-radius: 2.5rem;
+    //     }
+  }
+}

@@ -1,0 +1,181 @@
+.header {
+  // Position
+  position: relative;
+  // Decor
+  background: var(--page-background-second);
+  z-index: 1;
+  // border: 1px solid red;
+  // margin-bottom: 3.75rem;
+
+  // &::before {
+  //   // Position
+  //   position: absolute;
+  //   // top: 6rem;
+  //   top: 58%;
+  //   left: 0;
+  //   // Block model
+  //   width: 100%;
+  //   height: 0.15rem;
+  //   // Decor
+  //   content: "";
+  //   background-color: #f3f3f3;
+  // }
+
+  &__top-wrapper {
+    // Position
+    position: relative;
+
+    &::after {
+      // Position
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 0.15rem;
+      // Decor
+      content: "";
+      background-color: var(--header-line-color);
+    }
+  }
+
+  &__top {
+    // Block model
+    padding-top: 1.2rem;
+    padding-bottom: 1.05rem;
+    display: flex;
+    justify-content: space-between;
+
+    &-left-side {
+      // Block model
+      display: flex;
+      align-items: center;
+      gap: 2.9rem;
+    }
+
+    &-right-side {
+      // Block model
+      display: flex;
+      justify-content: end;
+      align-items: center;
+    }
+  }
+  &__logo-link {
+    // Block model
+    display: block;
+    width: 10.88rem;
+    flex-shrink: 0;
+  }
+  &__logo-image {
+    // Block model
+    width: 100%;
+  }
+  &__socials {
+    // Block model
+    // margin-left: 2.9rem;
+    display: flex;
+    gap: 0.75rem;
+
+    &-link {
+      // Block model
+      width: 2.5rem;
+      height: 2.5rem;
+      // Decor
+      border-radius: 50%;
+      background-color: var(--basic-color);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 1.1rem auto;
+    }
+
+    &-whatsapp {
+      // Decor
+      background-image: url(../images/header/__socials-link/whatsapp.svg);
+    }
+
+    &-telegram {
+      // Decor
+      background-image: url(../images/header/__socials-link/telegram.svg);
+    }
+  }
+  // &__socials
+  // &__socials
+  // &__socials
+  &__phone-numbers {
+    // Block model
+    padding-right: 1.9rem;
+    display: flex;
+    gap: 2.2rem;
+  }
+  &__phone-number {
+    // Block model
+    padding-left: 1.8rem;
+    // Typography
+    color: var(--text-color-second);
+    line-height: 140%;
+    // Decor
+    background-image: url(../images/header/__phone-number/handset.svg);
+    background-size: auto 1rem;
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
+
+  // &__wrapper-button-auction {
+  //   // background-color: gold;
+  //   // flex-grow: 0;
+  //   // flex-shrink: 0;
+  // }
+  &__button-auction {
+    // Block model
+    width: 9.62rem;
+    height: 3rem;
+    margin-right: 0.7rem;
+
+    &-image {
+      // Block model
+      width: 1.5rem;
+    }
+    &-text {
+      // Typography
+      font-size: 1rem;
+    }
+  }
+
+  &__button-menu {
+    // Block model
+    // margin-left: 0.7rem;
+    width: 3rem;
+    height: 3rem;
+    flex-shrink: 0;
+    flex-grow: 0;
+    // Decor
+    border: 0.15rem solid var(--basic-color);
+    border-radius: 0.63rem;
+    background-color: #00000000;
+    background-image: url("../images/header/__button-menu/button-menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    // Animation
+    transition: all 0.3s linear;
+  }
+  &__button-menu:hover {
+    // Decor
+    cursor: pointer;
+    // Animation
+    transform: scale(103%);
+  }
+  &__button-menu:active {
+    // Decor
+    cursor: pointer;
+    // Animation
+    transition: 0.1s linear all;
+    transform: scale(120%);
+  }
+}
+
+// Position
+// Block model
+// Typography
+// Decor
+// Animation
+// Other

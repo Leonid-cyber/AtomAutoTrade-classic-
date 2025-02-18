@@ -1,0 +1,39 @@
+@media #{$media-rule-for-large-screen} {
+  .description-method {
+    &__text-block {
+      // Block model
+      // display: flex;
+      // justify-content: space-between;
+
+      &-title {
+        // Block model
+        width: calc((356 / 888) * 100%);
+        // 356
+        // width: 36.7%;
+      }
+      &-text {
+        // Block model
+        width: calc((432 / 888) * 100%);
+        // 432
+        // width: 46.1%;
+        // Typography
+        // text-wrap: balance;
+      }
+    }
+    &__wrapper-images {
+      // Block model
+      padding-top: func-px-to-rem(60);
+      // display: grid;
+      // grid-template-rows: 14.06rem;
+      // grid-template-columns: repeat(3, 1fr);
+      // column-gap: func-px-to-rem(24);
+    }
+    &__image {
+      // Block model
+      // width: 100%;
+      // object-fit: contain;
+      // // Decor
+      // border-radius: 2.5rem;
+    }
+  }
+}

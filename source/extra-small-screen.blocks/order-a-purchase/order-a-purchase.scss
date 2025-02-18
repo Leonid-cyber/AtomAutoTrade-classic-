@@ -1,0 +1,63 @@
+@media #{$media-rule-for-extra-small-screen} {
+  .order-a-purchase {
+    // Block model
+    // padding: 2.25rem 1.625rem 22.8125rem 2rem;
+    padding: 2.25rem 2rem 22.8125rem 2rem;
+    padding: 2.25rem 1.25rem 15.475rem;
+
+    &__wrapper-content {
+      // Block model
+      width: 100%;
+    }
+
+    &__title {
+      // Block model
+      padding-bottom: 1rem;
+      width: 100%;
+    }
+
+    &__text {
+      // Block model
+      padding-bottom: 1.25rem;
+      width: 100%;
+    }
+
+    &__button {
+      // Block model
+      max-width: 100%;
+      width: 100%;
+      min-height: 3rem;
+
+      &-image {
+        // Block model
+        width: 1.25rem;
+      }
+      &-text {
+        // Typography
+        font-size: 0.88rem;
+      }
+    }
+
+    &__image-japan {
+      // Position
+      right: 1.6%;
+      bottom: 8.7%;
+      // Block model
+      width: 97%;
+    }
+    &__image-korea {
+      // Position
+      right: -5.5%;
+      bottom: 2.9%;
+      // Block model
+      width: 114.5%;
+    }
+    &__image-china {
+      // Position
+      right: -11.5%;
+      bottom: 1.8%;
+      // Block model
+      width: 123.5%;
+    }
+  }
+}

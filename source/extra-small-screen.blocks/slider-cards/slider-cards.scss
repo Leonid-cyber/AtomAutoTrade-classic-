@@ -1,0 +1,27 @@
+@media #{$media-rule-for-extra-small-screen} {
+
+.slider-cards {
+
+    &__wrapper-items {
+        // Block model
+        grid-auto-columns: 100%;
+    }
+
+    // &__wrapper-items {
+    //     // Block model
+    //     // padding: 0rem 2rem 1.5rem 2rem;
+    // }
+
+    &__wrapper-for-controls {
+        // Block model
+        margin-top: 1.8rem;
+    }
+
+        &__indicator{
+            // Block model
+            height: 0.4rem;
+        }
+
+}
+
+}

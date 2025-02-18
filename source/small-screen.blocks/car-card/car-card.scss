@@ -1,0 +1,30 @@
+@media #{$media-rule-for-small-screen} {
+  .car-card {
+    &__image {
+      // Block model
+      padding-bottom: 1.375rem;
+    }
+    &__advantage {
+      // Block model
+      max-width: 32.9%;
+      padding: 0.75rem 1.625rem;
+      text-wrap: wrap;
+    }
+
+    &__characteristics {
+      // Block model
+      padding-bottom: 0.875rem;
+    }
+
+    &__button {
+      &-image {
+        // Block model
+        width: 1.25rem;
+      }
+      &-text {
+        // Typography
+        font-size: 0.88rem;
+      }
+    }
+  }
+}

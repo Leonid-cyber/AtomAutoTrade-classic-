@@ -1,0 +1,53 @@
+@media #{$media-rule-for-large-screen} {
+  .order-a-purchase {
+    // Block model
+    padding: 3.3125rem;
+
+    &__title {
+      // Block model
+      padding-bottom: 1.25rem;
+      width: 56%;
+    }
+
+    &__text {
+      // Block model
+      width: 48%;
+    }
+
+    &__button {
+      // Block model
+      max-width: 13rem;
+
+      &-image {
+      }
+      &-text {
+        // Typography
+        font-size: 0.94rem;
+      }
+    }
+
+    &__image-japan {
+      // Position
+      // position: absolute;
+      right: -0.4%;
+      bottom: 9.2%;
+      // Block model
+      width: 51.7%;
+    }
+    &__image-korea {
+      // Position
+      position: absolute;
+      right: 1.8%;
+      bottom: 14.8%;
+      // Block model
+      width: 44%;
+    }
+    &__image-china {
+      // Position
+      right: -1.7%;
+      bottom: 8%;
+      // Block model
+      width: 54.5%;
+    }
+  }
+}

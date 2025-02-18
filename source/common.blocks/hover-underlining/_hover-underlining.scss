@@ -1,0 +1,28 @@
+.hover-underlining{
+
+    // &::after {
+    //     // Position
+    //     position: absolute;
+    //     left: 0;
+    //     bottom: 0;
+    //     // Block model
+    //     display: block;
+    //     content: '';
+    //     width: 0%;
+    //     height: 1px;
+    //     // Decor
+    //     background-color: var(--text-color-third);
+    //     // Animation
+    //     transition: 0.3s ease-out all;
+    // }
+    // &:hover::after{
+    //     // Block model
+    //     width: 100%;
+    // }
+    &:hover{
+        // opacity: 0.6;
+        // filter: contrast(0.4);
+        filter: brightness(0.7);
+        transition: 0.3s all ease-out;
+    }
+}

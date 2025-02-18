@@ -1,0 +1,137 @@
+.faq {
+  // Position
+  position: relative;
+  // Block model
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__title {
+    // Block model
+    padding-left: 0.2rem;
+    padding-bottom: func-px-to-rem(40);
+    flex: 0 0 100%;
+  }
+  &__questions {
+    // Block model
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+    gap: func-px-to-rem(24);
+  }
+  &__question-wrapper {
+    // Position
+    position: relative;
+    // Block model
+    box-sizing: border-box;
+    padding: func-px-to-rem(23, 36);
+    min-height: func-px-to-rem(97);
+    display: grid;
+    display: inline-grid;
+    grid-template-rows: auto 0fr;
+    align-content: center;
+    gap: 0;
+    // Decor
+    border-radius: func-px-to-rem(20);
+    background-color: var(--text-color-third);
+    // Other
+    overflow: hidden;
+    // Animation
+    transition: 0.3s linear all;
+
+    &:hover {
+      // Animation
+      cursor: pointer;
+    }
+    &::after {
+      // Position
+      position: absolute;
+      top: func-px-to-rem(37);
+      right: func-px-to-rem(37);
+      // Block model
+      width: 1.5rem;
+      height: 1.5rem;
+      // Other
+      content: "";
+      // Decor
+      background-image: url("../images/faq/plus.svg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      // Animation
+      transition: all 0.3s linear;
+      transform: rotate(-180deg);
+    }
+
+    &--open::after {
+      // Decor
+      background-image: url("../images/faq/minus.svg");
+      transform: rotate(0deg);
+    }
+    &--open > .faq__answer {
+      // Decor
+      opacity: 1;
+      // Animation
+      transition: all 0.3s linear, opacity 0.5s ease-in-out;
+    }
+    &--open {
+      // Block model
+      grid-template-rows: auto 1fr;
+      gap: func-px-to-rem(20);
+    }
+  }
+
+  &__question {
+    // Block model
+    width: 82.5%;
+    // Typography
+    font-size: 1.12rem;
+  }
+  &__answer {
+    // Decor
+    opacity: 0;
+    // Other
+    overflow: hidden;
+    // Animation
+    transition: all 0.2s linear;
+
+    &-link {
+      // Typography
+      color: var(--basic-color);
+      text-decoration: underline;
+    }
+  }
+
+  &__contact {
+    // Position
+    position: sticky;
+    top: 0;
+    right: 0;
+    // Block model
+    box-sizing: border-box;
+    width: calc((356 / 1116) * 100%);
+    height: fit-content;
+    padding: func-px-to-rem(47);
+
+    &-title {
+      // Typography
+      font-size: 1.5rem;
+    }
+    &-wrapper-buttons {
+      // Block model
+      display: flex;
+      flex-wrap: wrap;
+      gap: func-px-to-rem(9);
+    }
+    &-button {
+      // Block model
+      padding: func-px-to-rem(14, 20);
+    }
+    &-button-messenger {
+      // Block model
+      padding: func-px-to-rem(14);
+      width: auto;
+      aspect-ratio: 1;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.field-form {
+  // Block model
+  min-width: 0;
+  padding: 1rem 1.25rem;
+  // Typography
+  font-size: 0.94rem;
+  font-size: 0.95rem;
+  line-height: 140%;
+  // Decor
+  border: none;
+  border-radius: 0.62rem;
+  background-color: var(--page-background);
+
+  &::placeholder {
+    // Typography
+    font-family: "Museo Sans Cyrl 500";
+    // font-size: 0.94rem;
+    font-size: 1rem;
+    color: var(--text-color-placeholder);
+  }
+}

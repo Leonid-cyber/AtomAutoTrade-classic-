@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../images/icon-page/icon-page.ico"
+    type=”image/x-icon”>
+    <link rel="stylesheet" href="../../css/main.css" />
+    <title>Авто в наличии</title>
+  </head>
+  <body>
+    @@include('../../common.blocks/header/header.html')
+
+    <div class="page section-wrapper--padding-top-small">
+      <h2 class="title">Автомобили в наличии</h2>
+
+      <div class="section-wrapper__content">
+        @@include('../../common.blocks/filters/_cars-in-stock.html')
+
+        <div class="flipping-pages">
+          <div
+            class="flipping-pages__wrapper-items"
+            data-slider-name="cars-in-stock"
+          >
+            @@include('../../common.blocks/car-card/_car-card.html')
+          </div>
+
+          <div class="flipping-pages__wrapper-controls">
+            <button
+              class="flipping-pages__control-item flipping-pages__control-start"
+              data-page="start"
+              title="На первую страницу"
+            >
+              <span class="text flipping-pages__control-inner"> &laquo; </span>
+            </button>
+
+            <button
+              class="flipping-pages__control-item flipping-pages__control-previous"
+              data-page="previous"
+              title="Назад на страницу"
+            >
+              <span class="text flipping-pages__control-inner"> &lsaquo; </span>
+            </button>
+
+            <button
+              class="flipping-pages__control-item flipping-pages__control-item--selected"
+              data-page="number"
+              title="Страница 1"
+            >
+              <span class="text flipping-pages__control-inner"> 1 </span>
+            </button>
+
+            <button
+              class="flipping-pages__control-item"
+              data-page="number"
+              title="Страница 1"
+            >
+              <span class="text flipping-pages__control-inner"> 2 </span>
+            </button>
+
+            <button
+              class="flipping-pages__control-item"
+              data-page="number"
+              title="Страница 1"
+            >
+              <span class="text flipping-pages__control-inner"> 3 </span>
+            </button>
+
+            <button
+              class="flipping-pages__control-item flipping-pages__control-item--disable"
+              data-page="more"
+              title="Есть ещё страницы"
+            >
+              <span class="text flipping-pages__control-inner"> ... </span>
+            </button>
+
+            <button
+              class="flipping-pages__control-item"
+              data-page="number"
+              title="Страница 1"
+            >
+              <span class="text flipping-pages__control-inner"> 10 </span>
+            </button>
+
+            <button
+              class="flipping-pages__control-item flipping-pages__control-next"
+              data-page="next"
+              title="Вперёд на страницу"
+            >
+              <span class="text flipping-pages__control-inner"> &rsaquo; </span>
+            </button>
+
+            <button
+              class="flipping-pages__control-item flipping-pages__control-end"
+              data-page="end"
+              title="На последнюю страницу"
+            >
+              <span class="text flipping-pages__control-inner"> &raquo; </span>
+            </button>
+          </div>
+        </div>
+
+        <!-- <div class="flipping-pages">
+          <div
+            class="flipping-pages__wrapper-items"
+            data-slider-name="cars-in-stock"
+            data-items-for-flipping="18"
+          >
+            @@include('../../common.blocks/car-card/_car-card.html')
+          </div>
+
+          <div class="flipping-pages__wrapper-controls">
+            <button
+              class="flipping-pages__control-item flipping-pages__control-start"
+              data-page="start"
+              title="На первую страницу"
+            >
+              <span class="text flipping-pages__control-inner"> &laquo; </span>
+            </button>
+
+            <button
+              class="flipping-pages__control-item flipping-pages__control-previous"
+              data-page="previous"
+              title="Назад на страницу"
+            >
+              <span class="text flipping-pages__control-inner"> &lsaquo; </span>
+            </button>
+
+            <div class="flipping-pages__number-pages">
+              <button
+                class="flipping-pages__control-item flipping-pages__control-item--selected"
+                data-page="number"
+                title="Страница 1"
+              >
+                <span class="text flipping-pages__control-inner"> 1 </span>
+              </button>
+
+              <button
+                class="flipping-pages__control-item"
+                data-page="number"
+                title="Страница 1"
+              >
+                <span class="text flipping-pages__control-inner"> 2 </span>
+              </button>
+
+              <button
+                class="flipping-pages__control-item"
+                data-page="number"
+                title="Страница 1"
+              >
+                <span class="text flipping-pages__control-inner"> 3 </span>
+              </button>
+
+              <button
+                class="flipping-pages__control-item flipping-pages__control-item--disable"
+                data-page="more"
+                title="Есть ещё страницы"
+              >
+                <span class="text flipping-pages__control-inner"> ... </span>
+              </button>
+
+              <button
+                class="flipping-pages__control-item"
+                data-page="number"
+                title="Страница 1"
+              >
+                <span class="text flipping-pages__control-inner"> 10 </span>
+              </button>
+            </div>
+
+            <button
+              class="flipping-pages__control-item flipping-pages__control-next"
+              data-page="next"
+              title="Вперёд на страницу"
+            >
+              <span class="text flipping-pages__control-inner"> &rsaquo; </span>
+            </button>
+
+            <button
+              class="flipping-pages__control-item flipping-pages__control-end"
+              data-page="end"
+              title="На последнюю страницу"
+            >
+              <span class="text flipping-pages__control-inner"> &raquo; </span>
+            </button>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    @@include('../../common.blocks/footer/footer.html')
+    <!-- outvisible -->
+    <!-- @@include('../../common.blocks/modal-order-similar/_modal-order-similar.html') -->
+    @@include('../../common.blocks/on-screen-navigation/on-screen-navigation.html')
+  </body>
+
+  <script src="../../js/main.js"></script>
+</html>

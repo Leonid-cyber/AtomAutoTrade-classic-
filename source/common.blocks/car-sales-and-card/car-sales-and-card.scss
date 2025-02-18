@@ -1,0 +1,230 @@
+.car-sales-and-card {
+  // Block model
+  display: flex;
+  justify-content: space-between;
+  gap: func-px-to-rem(66);
+
+  &__previous-arrow {
+    // Block model
+    padding: func-px-to-rem(4, 4, 4, 0);
+    margin-bottom: 1.85rem;
+    display: inline-flex;
+    align-items: center;
+    gap: func-px-to-rem(8);
+    // Typography
+    font-family: "Museo Sans Cyrl 700";
+    text-transform: uppercase;
+    color: #989898;
+    line-height: normal;
+
+    &::before {
+      // Block model
+      width: func-px-to-rem(20);
+      aspect-ratio: 1;
+      // Decor
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: func-px-to-rem(10);
+      background-image: url("../images/text-block/__previous-page/Arrow.svg");
+      // Other
+      content: "";
+    }
+  }
+
+  &__wrapper-pictures {
+    // Block model
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: calc(641 / 1116 * 100%);
+  }
+
+  &__wrapper-main-image {
+    // Position
+    position: relative;
+  }
+  &__main-image {
+    // Block model
+    width: 100%;
+    aspect-ratio: calc(641 / 528);
+    object-fit: cover;
+    // Decor
+    border-radius: 1.5rem;
+  }
+  &__arrow {
+    // Position
+    position: absolute;
+    top: 50%;
+    // Decor
+    border-radius: 1rem;
+    // Animation
+    transition: all 0.2s linear;
+    // Other
+    transform: translateY(-50%);
+
+    &:hover {
+      // Decor
+      cursor: pointer;
+      backdrop-filter: blur(0.5rem);
+    }
+
+    &:active {
+      // Decor
+      background-color: var(--basic-color);
+      transition: all 0.1s linear;
+    }
+  }
+  &__arrow-left {
+    // Position
+    left: 0;
+  }
+  &__arrow-right {
+    // Position
+    right: 0;
+    transform: translateY(-50%) rotate(180deg);
+  }
+  &__additional-images-wrapper {
+    // Block model
+    padding-top: 2.3rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: func-px-to-rem(10);
+  }
+  &__additional-image {
+    // Block model
+    width: 100%;
+    aspect-ratio: calc(120 / 92);
+    object-fit: cover;
+    // Decor
+    border-radius: 1.12rem;
+
+    &:hover {
+      // Decor
+      cursor: pointer;
+      transform: scale(104%);
+      transition: 0.3s all ease-in-out;
+    }
+  }
+
+  &__text-block {
+    // Block model
+    padding-top: func-px-to-rem(20);
+  }
+  &__price {
+    // Typography
+    font-family: "Museo Sans Cyrl 700";
+    font-size: 2.75rem;
+  }
+  &__characteristics {
+    // Block model
+    padding-top: func-px-to-rem(24);
+    display: flex;
+    flex-direction: column;
+    gap: func-px-to-rem(14);
+
+    &-item {
+      // Block model
+      display: flex;
+      flex-direction: column;
+      gap: func-px-to-rem(2);
+    }
+    &-title {
+      // Typography
+      font-size: 0.75rem;
+      color: #989898;
+    }
+    &-text {
+      // Typography
+      font-size: 1rem;
+      color: var(--text-color-first);
+    }
+  }
+
+  &__buttons {
+    // Block model
+    padding-top: 2.4rem;
+    display: flex;
+    gap: 0.6rem;
+  }
+  &__button {
+    // Block model
+    padding: func-px-to-rem(14, 20);
+  }
+  &__button-messenger {
+    // Block model
+    padding: func-px-to-rem(13);
+
+    &-image {
+      // Block model
+      width: func-px-to-rem(21);
+    }
+  }
+
+  &__description {
+    // Block model
+    padding-top: func-px-to-rem(36);
+    display: flex;
+    flex-direction: column;
+    gap: func-px-to-rem(12);
+
+    &-inner {
+      // Block model
+      display: block;
+    }
+
+    &-title {
+      // Block model
+      padding-bottom: func-px-to-rem(12);
+      // Typography
+      font-size: func-px-to-rem(12);
+      color: #989898;
+
+      &-end {
+        // Position
+        position: relative;
+        // Block model
+        margin-top: func-px-to-rem(12);
+        // Typography
+        font-size: func-px-to-rem(12);
+        color: #989898;
+
+        &::after {
+          // Position
+          position: absolute;
+          // Block model
+          margin-left: func-px-to-rem(4);
+          width: func-px-to-rem(14);
+          aspect-ratio: 1;
+          // Decor
+          background-image: url("../images/car-sales-and-card/__open/arrow.svg");
+          background-size: func-px-to-rem(10);
+          background-position: center bottom 35%;
+          background-repeat: no-repeat;
+          // Other
+          content: "";
+        }
+      }
+    }
+    &-preview {
+      &::after {
+        // Block model
+        display: inline;
+        // Other
+        content: "...";
+      }
+    }
+
+    & .car-sales-and-card__description-text {
+      // Block model
+      display: none;
+    }
+    &[open] .car-sales-and-card__description-text {
+      display: inline;
+    }
+    &[open] .car-sales-and-card__description-preview::after {
+      display: none;
+    }
+    &[open] .car-sales-and-card__description-title-end {
+      display: none;
+    }
+  }
+}

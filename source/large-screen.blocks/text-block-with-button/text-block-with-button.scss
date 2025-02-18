@@ -1,0 +1,33 @@
+@media #{$media-rule-for-large-screen} {
+  .text-block-with-button {
+    &__title {
+      // Block model
+      padding-bottom: 1.15rem;
+      width: 95%;
+      // Typography
+      font-size: 1.75rem;
+      line-height: 120%;
+    }
+    &__text {
+      // Block model
+      width: 94%;
+      padding-bottom: 1.73rem;
+      // Typography
+      font-size: 1rem;
+      line-height: 140%;
+    }
+    &__button {
+      // Block model
+      width: 12.88rem;
+      // height: 3rem;
+      // padding: 0.875rem;
+
+      &-image {
+      }
+      &-text {
+        // Typography
+        font-size: 0.94rem;
+      }
+    }
+  }
+}

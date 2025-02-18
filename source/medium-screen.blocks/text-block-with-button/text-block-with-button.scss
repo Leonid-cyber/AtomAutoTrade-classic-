@@ -1,0 +1,36 @@
+@media #{$media-rule-for-medium-screen} {
+  .text-block-with-button {
+    &__title {
+      // Block model
+      padding-bottom: 1rem;
+      width: 100%;
+      width: 93%;
+      // Typography
+      font-size: 1.25rem;
+    }
+    &__text {
+      // Block model
+      // width: 94%;
+      width: 100%;
+      padding-bottom: 1.5rem;
+      // Typography
+      font-size: 0.88rem;
+      // line-height: 140%;
+    }
+    &__button {
+      // Block model
+      // width: 12.4rem;
+      width: 12.19rem;
+      min-height: 2.88rem;;
+
+      &-image {
+        // Block model
+        width: 1.125rem;
+      }
+      &-text {
+        // Typography
+        font-size: 0.88rem;
+      }
+    }
+  }
+}

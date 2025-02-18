@@ -1,0 +1,24 @@
+@media #{$media-rule-for-extra-small-screen} {
+  .documents {
+    // Block model
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+
+    &__item {
+      // Block model
+      flex-direction: column;
+      gap: func-px-to-rem(37);
+      padding: func-px-to-rem(32, 35, 28);
+
+      &-title {
+        // Block model
+        width: min-content;
+      }
+
+      &-image {
+        // Block model
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@media #{$media-rule-for-extra-small-screen} {
+  .promise {
+    // Block model
+    // padding: 2rem 1.25rem;
+    padding: 1.5rem 1.25rem;
+
+    & br {
+      display: none;
+    }
+
+    &--counter::before {
+      // Position
+      top: 1.6rem;
+      right: 1.25rem;
+    }
+
+    &--large-padding-bottom {
+      // Block model
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+    &__image-large {
+      // Block model
+      padding-bottom: 1.5rem;
+    }
+  }
+}

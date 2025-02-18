@@ -1,0 +1,52 @@
+@media #{$media-rule-for-large-screen} {
+  .faq {
+    &__title {
+      // Block model
+      padding-bottom: func-px-to-rem(44);
+    }
+    &__questions {
+    }
+    &__question-wrapper {
+      // Block model
+      padding: func-px-to-rem(36);
+      min-height: func-px-to-rem(119);
+
+      &::after {
+        // Position
+        top: func-px-to-rem(48);
+        right: func-px-to-rem(36);
+      }
+    }
+
+    &__question {
+      // Block model
+      width: 87.7%;
+    }
+    &__answer {
+      &-link {
+      }
+    }
+
+    &__contact {
+      // Block model
+      padding: func-px-to-rem(40, 32);
+
+      &-title {
+        // Typography
+        font-size: 1.25rem;
+      }
+      &-wrapper-buttons {
+      }
+      &-button {
+        // Block model
+        width: 100%;
+      }
+      &-button-messenger {
+        // Block model
+        aspect-ratio:unset;
+        width: 44.5%;
+        height: 3.25rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+// CATEGORIES -------------------------------------------------------------------------------
+.categories {
+  // Block model
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.5rem;
+  justify-content: space-between;
+
+  &__title {
+    // Typography
+    font-size: 1.75rem;
+  }
+  &__item {
+    --size-image-flag: 3.25rem;
+    --position-image-flag: top -1% right 0;
+    // Block model
+    display: block;
+    box-sizing: border-box;
+    min-height: 25rem;
+    padding: 2.75rem 2.5rem;
+    // Decor
+    background: no-repeat right -4.9rem bottom 23% / 115%,
+      no-repeat var(--position-image-flag) / var(--size-image-flag);
+    background-origin: padding-box, content-box;
+    filter: grayscale(1);
+    // Animation
+    transition: 0.2s all linear;
+
+    &:hover {
+      // Decor
+      filter: grayscale(0);
+      // Animation
+      transition: all 0.3s ease-out;
+      // Other
+      transform: translateY(-7.5%);
+    }
+  }
+  &__japan {
+    // Decor
+    background-image: url("../images/categories/__japan/auto-japan.png"),
+      url("../images/categories/__japan/icon-japan.svg");
+    background-size: 122%, var(--size-image-flag);
+  }
+  &__china {
+    // Decor
+    background-image: url("../images/categories/__china/auto-china.png"),
+      url("../images/categories/__china/icon-china.svg");
+    background-size: 128%, var(--size-image-flag);
+    background-position: right -6.8rem bottom 24%, var(--position-image-flag);
+  }
+  &__korea {
+    // Decor
+    background-image: url("../images/categories/__korea/auto-korea.png"),
+      url("../images/categories/__korea/icon-korea.svg");
+    background-size: 115%, var(--size-image-flag);
+  }
+}

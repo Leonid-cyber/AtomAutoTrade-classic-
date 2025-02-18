@@ -1,0 +1,34 @@
+@media #{$media-rule-for-small-screen} {
+  .promises {
+    // Block model
+    //     display: grid;
+    // grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    //     grid-template-rows: repeat(2, 1fr);
+    //     // gap: 1.45rem;
+    gap: 1.5rem;
+    // gap: 1.68rem;
+    // gap: 1.65rem;
+    // gap: 1.72rem;
+    //     // justify-items: center;
+    //     justify-items: stretch;
+    //     justify-content: space-between;
+    //     // Other
+    //     counter-reset: promise-counter 0;
+    &--single-column {
+      // Block model
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      // grid-template-rows:
+    }
+
+    &--double-column {
+      // Block model
+      // grid-template-columns: 1fr 1fr;
+      // grid-template-rows: 1fr;
+      // justify-items: stretch;
+      background-color: red;
+    }
+  }
+}

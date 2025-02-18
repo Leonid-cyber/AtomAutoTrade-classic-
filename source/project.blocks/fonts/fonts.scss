@@ -1,0 +1,155 @@
+/* FONTS */
+@font-face {
+  font-family: "Museo Sans Cyrl 100";
+  src: url("../fonts/Museo Sans Cyrl 100.otf");
+}
+
+@font-face {
+  font-family: "Museo Sans Cyrl 500";
+  src: url("../fonts/Museo Sans Cyrl 500.ttf");
+}
+
+@font-face {
+  font-family: "Museo Sans Cyrl 700";
+  src: url("../fonts/Museo Sans Cyrl 700.ttf");
+}
+
+@font-face {
+  font-family: "Museo Sans Cyrl 900";
+  src: url("../fonts/Museo Sans Cyrl 900.ttf");
+}
+
+@font-face {
+  font-family: "RF Dewi Expanded";
+  src: url("../fonts/RFDewiExpanded-Black.woff2");
+}
+
+.title {
+  font-family: "RF Dewi Expanded";
+  font-weight: 900;
+  font-size: 2rem;
+  letter-spacing: normal;
+  line-height: 120%;
+  color: var(--title-color);
+  // font: RF Dewi Expanded 900 2rem 120%;
+}
+@media #{$media-rule-for-large-screen} {
+  .title {
+    font-size: 1.75rem;
+  }
+}
+@media #{$media-rule-for-medium-screen} {
+  .title {
+    font-size: 1.25rem;
+  }
+}
+@media #{$media-rule-for-small-screen} {
+  .title {
+    font-size: 1.25rem;
+  }
+}
+@media #{$media-rule-for-extra-small-screen} {
+  .title {
+    font-size: 1.25rem;
+  }
+}
+
+.title-second {
+  font-family: "RF Dewi Expanded";
+  font-weight: 900;
+  font-size: 1.25rem;
+  letter-spacing: normal;
+  line-height: 140%;
+  color: var(--title-color);
+  // font: RF Dewi Expanded 900 2rem 120%;
+}
+// @media #{$media-rule-for-large-screen} {
+//   // .title-second {
+//   //   font-size: 1.25rem;
+//   // }
+// }
+@media #{$media-rule-for-medium-screen} {
+  .title-second {
+    font-size: 1.12rem;
+  }
+}
+@media #{$media-rule-for-small-screen} {
+  .title-second {
+    font-size: 1.12rem;
+  }
+}
+@media #{$media-rule-for-extra-small-screen} {
+  .title-second {
+    font-size: 1.12rem;
+  }
+}
+
+.subtitle {
+  font-family: "Museo Sans Cyrl 900";
+  font-weight: 900;
+  font-size: 1rem;
+  letter-spacing: normal;
+  line-height: 140%;
+  color: var(--title-color);
+}
+
+.subtitle-second {
+  font-family: "Museo Sans Cyrl 700";
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: normal;
+  line-height: normal;
+  // color: #7D7D7D;
+  color: var(--title-color);
+}
+
+.text {
+  font-family: "Museo Sans Cyrl 500";
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: normal;
+  line-height: 140%;
+  color: var(--text-color-first);
+}
+@media #{$media-rule-for-large-screen} {
+  .text {
+    font-size: 1rem;
+  }
+}
+@media #{$media-rule-for-medium-screen} {
+  .text {
+    font-size: 0.88rem;
+  }
+}
+@media #{$media-rule-for-small-screen} {
+  .text {
+    font-size: 0.88rem;
+  }
+}
+@media #{$media-rule-for-extra-small-screen} {
+  .text {
+    font-size: 0.88rem;
+  }
+}
+
+.text-second {
+  font-family: "Museo Sans Cyrl 500";
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 230%;
+  letter-spacing: normal;
+  color: var(--text-color-fourth);
+
+  @media #{$media-rule-for-large-screen} {
+    line-height: 226%;
+  }
+  @media #{$media-rule-for-medium-screen} {
+    font-size: 0.88rem;
+  }
+  @media #{$media-rule-for-small-screen} {
+    font-size: 0.88rem;
+  }
+  @media #{$media-rule-for-extra-small-screen} {
+    font-size: 0.88rem;
+  }
+}

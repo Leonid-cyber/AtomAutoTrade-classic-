@@ -1,0 +1,105 @@
+.selection-of-brands {
+  // Block model
+  padding-top: 6.2rem;
+
+  &__text-block {
+    // Block model
+    padding-bottom: 6rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    // Block model
+    width: 38%;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  &__text {
+    // Block model
+    width: 35.6%;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  &__content {
+    // Block model
+    display: flex;
+    justify-content: space-between;
+  }
+  &__brands {
+    // Block model
+    // display: grid;
+    // grid-template-columns: repeat(3, 10.85rem);
+    // grid-template-rows: repeat(3, 9.1rem);
+    // gap: 1.01rem;
+    display: grid;
+    grid-template-columns: repeat(3, 10.85rem);
+    grid-template-rows: repeat(3, 6.1rem);
+    row-gap: 4.01rem;
+    column-gap: 1rem;
+
+    // &>*{
+    //     // Decor
+    //     background-color: gold;
+    // }
+  }
+
+  &__brand {
+    // Decor
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &__brand-1 {
+    // Decor
+    background-image: url("../../images/selection-of-brands/__brand/hyundai.svg");
+    background-size: 74%;
+  }
+  &__brand-2 {
+    // Decor
+    background-image: url("../../images/selection-of-brands/__brand/kia.svg");
+  }
+  &__brand-3 {
+    // Decor
+    background-image: url("../../images/selection-of-brands/__brand/SY.svg");
+  }
+  &__brand-4 {
+    // Decor
+    background-image: url("../../images/selection-of-brands/__brand/ford.svg");
+  }
+  &__brand-5 {
+    // Decor
+    background-image: url("../../images/selection-of-brands/__brand/chevrolet.svg");
+  }
+  &__brand-6 {
+    // Decor
+    background-image: url("../../images/selection-of-brands/__brand/lexus.svg");
+  }
+  &__brand-7 {
+    // Decor
+    background-image: url("../../images/selection-of-brands/__brand/mersedes.svg");
+  }
+  &__brand-8 {
+    // Decor
+    background-image: url("../../images/selection-of-brands/__brand/bmw.svg");
+  }
+  &__brand-9 {
+    // Decor
+    background-image: url("../../images/selection-of-brands/__brand/porsche.svg");
+  }
+
+  &__image-wrappper {
+    // Position
+    position: relative;
+    // Block model
+    width: 100%;
+  }
+  &__image {
+    // Position
+    position: absolute;
+    top: -1.15rem;
+    left: 1.55rem;
+    // Block model
+    width: 108.3%;
+  }
+}

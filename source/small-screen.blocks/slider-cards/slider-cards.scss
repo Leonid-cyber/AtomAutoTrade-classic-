@@ -1,0 +1,22 @@
+@media #{$media-rule-for-small-screen} {
+
+.slider-cards {
+
+    &__wrapper-items {
+        // Block model
+        grid-auto-columns: 100%;
+    }
+
+    &__wrapper-for-controls {
+        // Block model
+        margin-top: 2rem;
+    }
+
+        &__indicator{
+            // Block model
+            height: 0.4rem;
+        }
+
+}
+
+}

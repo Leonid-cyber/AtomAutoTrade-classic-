@@ -1,0 +1,57 @@
+@media #{$media-rule-for-medium-screen} {
+  .differences-in-methods {
+    // // Position
+    // position: relative;
+    // z-index: -2;
+    // Block model
+    // box-sizing: border-box;
+    padding: func-px-to-rem(40, 323, 40, 33);
+
+    &--padding-small {
+      // Block model
+      padding: func-px-to-rem(40, 281, 40, 33);
+    }
+
+    &__text {
+      // Block model
+      // padding-bottom: func-px-to-rem(24);
+      // Typography
+      font-size: 1rem;
+    }
+
+    &__button {
+      // Block model
+      width: 101%;
+      min-width: max-content;
+      min-height: 2.88rem;
+
+      &--large-height {
+        // Block model
+        min-height: 3.38rem;
+      }
+
+      &-image {
+        // Block model
+        width: func-px-to-rem(18);
+      }
+      &-text {
+        // Typography
+        font-size: 0.88rem;
+      }
+    }
+
+    &__image {
+      // Position
+      bottom: 14%;
+      right: 0.6%;
+      // Block model
+      width: calc((332 / 660) * 100%);
+    }
+    &__image-2 {
+      // Block model
+      width: calc((382 / 660) * 100%);
+      // Other
+      transform: translate(func-px-to-rem(34), func-px-to-rem(40));
+    }
+  }
+}

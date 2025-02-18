@@ -1,0 +1,71 @@
+// @media screen and (min-width: $large-screen) and (max-width: $extra-large-screen) {
+@media #{$media-rule-for-large-screen} {
+
+.consultation {
+  // Block model
+  padding: 3rem 3.25rem;
+
+  &__text-block {
+
+    &-title {
+      // Block model
+      width: 100%;
+    }
+
+    &-text {
+      // Block model
+      width: 92.26%;
+    }
+
+  }
+
+  &__form {
+    // Block model
+    width: 53.8%;
+
+    &-fields {
+      // Block model
+      padding-bottom: 2rem;
+    }
+
+    &-input-name {
+    }
+
+    &-input-number {
+    }
+
+    &-input-model {
+    }
+
+    &-send {
+      // Block model
+      gap: 0.875rem;
+      gap: 0.8rem;
+
+      &-policity {
+        // Block model
+        flex-basis: min-content;
+        flex-grow: 1;
+        // Typography
+        font-size: 0.69rem;
+      }
+
+      &-button {
+        // Block model
+        width: 16.62rem;
+        padding: 0.875rem 1.05rem;
+
+        &-image {
+        }
+        &-text {
+          // Typography
+          font-size: 0.94rem;
+        }
+      }
+    }
+
+  }
+
+}
+
+}

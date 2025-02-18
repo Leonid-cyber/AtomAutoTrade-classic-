@@ -1,0 +1,42 @@
+@media #{$media-rule-for-large-screen} {
+  
+  .filters {
+    // Block model
+    padding-bottom: 2rem;
+    gap: 1.25rem;
+
+    &--single-country {
+      // Block model
+      // flex-direction: row;
+      // flex-wrap: wrap;
+      // flex-wrap: nowrap;
+      background-color: burlywood;
+    }
+
+    &__type-of-cars {
+      // Position
+      order: 3;
+      
+      &--small-width {
+        // Position
+        order: 1;
+        // Block model
+        padding-bottom: 0.75rem;
+        flex-wrap: wrap;
+        width: 50%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        row-gap: 0.875rem;
+        // background-color: gold;
+      }
+    }
+
+    &__country {
+      // Position
+      order: 2;
+      // background-color: goldenrod;
+    }
+
+  }
+    
+}

@@ -1,0 +1,36 @@
+@media #{$media-rule-for-medium-screen} {
+  .categories {
+    &__item {
+      --size-image-flag: 1.88rem;
+      --position-image-flag: top right;
+      // Block model
+      min-height: 15rem;
+      padding: 1.25rem;
+      // Decor
+      border-radius: 1.88rem !important;
+    }
+
+    &__title {
+      // Typography
+      font-size: 1.12rem;
+    }
+
+    &__japan {
+      // Decor
+      background-size: 122%, var(--size-image-flag);
+      background-position: left -5% bottom 19%, var(--position-image-flag);
+    }
+
+    &__china {
+      // Decor
+      background-size: 126%, var(--size-image-flag);
+      background-position: left -13% bottom 20%, var(--position-image-flag);
+    }
+
+    &__korea {
+      // Decor
+      background-size: 114%, var(--size-image-flag);
+      background-position: left -63% bottom 20%, var(--position-image-flag);
+    }
+  }
+}

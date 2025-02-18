@@ -1,0 +1,75 @@
+@media #{$media-rule-for-medium-screen} {
+  .consultation {
+    // Block model
+    padding: 3rem 3.25rem;
+    padding: 2.25rem 2.0625rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+
+    &__text-block {
+      // Block model
+      width: 100%;
+      padding-bottom: 0.5rem;
+
+      &-title {
+        // Block model
+        width: 100%;
+        padding-bottom: 1rem;
+      }
+
+      &-text {
+        // Block model
+        width: 62.58%;
+      }
+    }
+
+    &__form {
+      // Block model
+      width: 100%;
+      padding-top: 1.75rem;
+
+      &-fields {
+        // Block model
+        padding-bottom: 1.25rem;
+      }
+
+      &-send {
+        // Block model
+        justify-content: space-between;
+        gap: 0;
+
+        &-policity {
+          // Block model
+          width: 40%;
+          flex-grow: 0;
+          flex-shrink: 0;
+          // Typography
+          font-size: 0.88rem;
+        }
+
+        // &-wrapper-button {
+        //   // Block model
+        //   flex-grow: 0;
+        //   flex-shrink: 0;
+        //   width: 57.5%;
+        // }
+        &-button {
+          // // Block model
+          // flex-shrink: 0;
+          // width: 49.4%;
+          width: 57.5%;
+          // // width: 16.88rem;
+          // min-height: 3.38rem;
+
+          &-image {
+          }
+          &-text {
+            // Typography
+            font-size: 0.94rem;
+          }
+        }
+      }
+    }
+  }
+}

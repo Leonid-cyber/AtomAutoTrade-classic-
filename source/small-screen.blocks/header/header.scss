@@ -1,0 +1,77 @@
+// @media #{$media-rule-for-small-screen} {
+// @media screen and ($small-screen <= width <= $medium-screen) {
+@media #{$media-rule-for-small-screen} {
+  .header {
+    // &::before {
+    //   // Block model
+    //   display: none;
+    // }
+
+    &__top-wrapper {
+      &::after {
+        // Block model
+        display: none;
+      }
+    }
+    &__top {
+      // Block model
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+    &__bottom {
+      // Block model
+      display: none;
+    }
+
+    &__logo-link {
+      // Block model
+      width: 8.44rem;
+    }
+
+    &__socials {
+      // Block model
+      display: none;
+    }
+
+    &__phone-numbers {
+      // Block model
+      display: none;
+    }
+
+    // &__wrapper-button-auction {
+    //   // Block model
+    //   padding-right: 0.6rem;
+    //   width: 9.65rem;
+    //   height: 2.88rem;
+    // }
+
+    &__button-auction {
+      // Block model
+      margin-right: 0.6rem;
+      width: 9.65rem;
+      height: 2.88rem;
+
+      &-image {
+        // Block model
+        width: 1.25rem;
+      }
+      &-text {
+        // Typography
+        font-size: 0.88rem;
+      }
+    }
+
+    &__button-menu {
+      // Block model
+      width: 2.88rem;
+      height: 2.88rem;
+    }
+  }
+}
+
+// Position
+// Block model
+// Typography
+// Decor
+// Animation
+// Other

@@ -1,0 +1,33 @@
+@media #{$media-rule-for-medium-screen} {
+  .section-wrapper {
+    // Block model
+    padding-top: calc((80 / 16) * 1rem);
+
+    &--padding-top-small {
+      // 60 60 60 40 40
+      // Block model
+      // padding-top: calc((60 / 16) * 1rem);
+      padding-top: func-px-to-rem(60);
+    }
+    &--padding-top-constant {
+      // Block model
+      padding-top: func-px-to-rem(40);
+      // box-shadow: 0 0 10px red;
+    }
+
+    &__content {
+      // Block model
+      padding-top: calc((44 / 16) * 1rem);
+    }
+    .section-wrapper__content + .section-wrapper__content {
+      // 60 40 32 32 32
+      padding-top: func-px-to-rem(32);
+    }
+    // .section-wrapper--padding-top-constant
+    //   + .section-wrapper--padding-top-constant {
+    //   // Block model
+    //   padding-top: func-px-to-rem(40);
+    //   box-shadow: 0 0 10px red;
+    // }
+  }
+}

@@ -1,0 +1,10 @@
+npm i gulp gulp-sass sass gulp-file-include gulp-clean gulp-server-livereload gulp-sourcemaps gulp-plumber gulp-notify gulp-group-css-media-queries --save-dev
+npm i webpack-stream style-loader css-loader --save-dev
+Установленные пакеты в package.json
+
+Проект передается без папки node_modules
+
+введением команды nmp i можно установить пакеты из package.json
+Set-ExecutionPolicy RemoteSigned
+npm i gulp-changed@4
+distributive

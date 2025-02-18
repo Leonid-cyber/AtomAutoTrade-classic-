@@ -1,0 +1,199 @@
+<!-- <section class="modal-order-similar" data-modal-window="order-similar">
+
+    <div class="modal-order-similar__inner">
+
+        <div class="modal-order-similar__card-auto">
+
+            <img 
+                class="modal-order-similar__image" 
+                src="" 
+                alt="Current auto"
+                data-modal-auto-photo
+            >
+
+            <p class="subtitle modal-order-similar__subtitle" data-modal-auto-model>
+                Test Toyota Aqua
+            </p>
+
+            <div class="text modal-order-similar__characteristics" data-modal-auto-characteristics>
+                Гибрид | 1.5л | передний
+            </div>
+
+            <div class="modal-order-similar__item-tags">
+
+                <p class="subtitle modal-order-similar__item-tag" data-modal-auto-tag>
+                    2020
+                </p>
+
+                <p class="subtitle modal-order-similar__item-tag" data-modal-auto-tag>
+                    NHP10
+                </p>
+
+                <p class="subtitle modal-order-similar__item-tag" data-modal-auto-tag>
+                    test
+                </p>
+
+                <p class="subtitle modal-order-similar__item-tag" data-modal-auto-tag>
+                    test
+                </p>
+
+            </div>
+
+            <p class="subtitle-second modal-order-similar__price" data-modal-auto-price>
+                1 290 000 руб
+            </p>
+            
+        </div>
+
+        <form 
+            class="modal-order-similar__form" 
+            name="form-modal-order-similar"
+        >
+            <div class="title modal-order-similar__form-title">
+                Заказать похожий автомобиль
+            </div>
+
+            <div class="modal-order-similar__inputs">
+
+                <input 
+                    class="text modal-order-similar__input"
+                    type="text" 
+                    placeholder="Имя"
+                    name="name"
+                >
+
+                <input 
+                    class="text modal-order-similar__input"
+                    type="text" 
+                    placeholder="Телефон"
+                    name="telephone"
+                >
+
+            </div>
+
+            <div class="modal-order-similar__buttons-wrapper">
+
+                @@include('../button-base/_send.html')
+
+                @@include('../button-base/_whatsapp.html')
+
+            </div>
+            
+            <p class="text modal-order-similar__business">
+                Нажимая кнопку «Отправить», вы соглашаетесь с <a class="text modal-order-similar__policity-link" href="">политикой конфиденциальности</a>
+            </p>
+
+        </form>
+
+        <button 
+            class="modal-order-similar__close-icon" 
+            data-close-modal-window="order-similar"
+        ></button>
+
+    </div>
+
+</section> -->
+
+<dialog class="modal-order-similar" data-modal-window="order-similar">
+  <div
+    class="visible-box modal-order-similar__inner modal-order-similar__inner--small-padding"
+  >
+    <div class="modal-order-similar__card-auto">
+      <img
+        class="modal-order-similar__image"
+        src=""
+        alt="Current auto"
+        data-modal-auto-photo
+      />
+
+      <p class="subtitle modal-order-similar__subtitle" data-modal-auto-model>
+        Text model
+      </p>
+
+      <div
+        class="text modal-order-similar__characteristics"
+        data-modal-auto-characteristics
+      >
+        Text characteristics
+      </div>
+
+      <div class="modal-order-similar__item-tags">
+        <p class="subtitle modal-order-similar__item-tag" data-modal-auto-tag-1>
+          test-tag
+        </p>
+
+        <p class="subtitle modal-order-similar__item-tag" data-modal-auto-tag-2>
+          test-tag
+        </p>
+
+        <p class="subtitle modal-order-similar__item-tag" data-modal-auto-tag-3>
+          test-tag
+        </p>
+
+        <p class="subtitle modal-order-similar__item-tag" data-modal-auto-tag-4>
+          test-tag
+        </p>
+      </div>
+
+      <p
+        class="subtitle-second modal-order-similar__price"
+        data-modal-auto-price
+      >
+        Value price
+      </p>
+    </div>
+    <div class="modal-order-similar__text-block-wrapper">
+      <!-- <div class="text-block"> -->
+      <div class="title-second modal-order-similar__title">
+        Заказать похожий автомобиль
+      </div>
+      <!-- </div> -->
+
+      <form
+        class="modal-order-similar__form"
+        name="
+                form-modal-order-similar"
+      >
+        <input class="field-form" type="text" placeholder="Имя" name="name" />
+        <input
+          class="field-form"
+          type="text"
+          placeholder="Телефон"
+          name="telephone"
+        />
+      </form>
+
+      <div class="modal-order-similar__send">
+        <div class="modal-order-similar__wrapper-buttons">
+          <button class="button-base modal-order-similar__button-send">
+            <img
+              class="button-base__image"
+              src="../../images/modal-order-similar/__button-send/arrow.svg"
+              alt="send"
+            />
+
+            <span class="button-base__text"> отправить </span>
+          </button>
+          <button class="button-base modal-order-similar__button-messenger">
+            <img
+              class="button-base__image modal-order-similar__button-messenger-image"
+              src="../../images/button-base/__whatsapp/whatsapp.svg"
+              alt="whatsapp"
+            />
+          </button>
+        </div>
+
+        <p class="text modal-order-similar__business">
+          Нажимая кнопку «Отправить», вы соглашаетесь с
+          <a class="text modal-order-similar__business-link" href=""
+            >политикой конфиденциальности</a
+          >
+        </p>
+      </div>
+
+      <form class="modal-order-similar__close-icon" method="dialog">
+        <button class="modal-order-similar__close-button" type="submit"></button>
+      </form>
+    </div>
+  </div>
+</dialog>

@@ -1,0 +1,135 @@
+@media #{$media-rule-for-small-screen} {
+
+.price-composition {
+
+    &__text-block{
+        // Block model
+        padding-bottom: 0.5rem;
+        padding-bottom: 2rem;
+        flex-direction: column;
+        gap: 1.05rem;
+
+        &-title {
+            // Block model
+            width: 62%;
+            width: 80%;
+            // background-color: gold;
+            // Typography
+            font-size: 1.25rem;
+            line-height: 120%;
+
+            // &--large-title {
+            //     // Block model
+            //     flex-grow: 0;
+            //     flex-shrink: 0;
+            //     min-width: initial;
+            //     max-width: initial;
+            //     width: 36%;
+            //     // Typography
+            //     font-size: 2rem;
+            // }
+        }
+        &-text {
+            // Block model
+            width: 100%;
+            // Typography
+            font-size: 0.88rem;
+            line-height: 140%;
+
+            // &--large-width{
+            //     // Block model
+            //     width: 46%;
+            //     width: 47%;
+            // }
+        }
+    }
+
+    &__components {
+        // Position
+        position: relative;
+        left: -1.5rem;
+        // Block model
+        padding: 0 1.5rem;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 15.7rem;
+        grid-auto-rows: 1fr;
+        gap: 1.55rem 1.5rem;
+        // Decor
+        background-position: top 32.9% center, top 2% center;
+        background-size: 76.4%, 189%; 
+
+        &--background-japan {
+            // Decor
+            background-position: top 32.9% center, top 2% center;
+            background-size: 76.4%, 189%;
+        }
+        &--background-china {
+            // Decor
+            background-position: top 32.9% center, top 2% center;
+            background-size: 76.4%, 189%;
+        }
+        &--background-korea {
+            // Decor
+            background-position: top 32.9% center, top 2% center;
+            background-size: 76.4%, 189%;
+        }
+    }
+        &__component {
+            // Block model
+            padding: 6.125rem 2rem 2rem;
+            // Decor
+            background-position: top 1.9rem left 1.9rem;
+            background-size: 3.4rem;
+
+            &-title {
+                // Block model
+                width: 100%;
+                // Typorgaphy
+                font-size: 1rem;
+                line-height: 140%;
+            }
+
+            &-text {
+                // Block model
+                width: 100%;
+                // Typorgaphy
+                font-size: 0.88rem;
+                line-height: 140%
+            }
+
+            &-collapse-text {
+                // Block model
+                display: none;
+            }
+            
+        }
+
+        &__component-empty {
+            // Block model
+            display: block;
+            grid-column: span 2;
+        }
+            
+
+    // &__wrapper-images {
+    //     // Block model
+    //     padding-top: 1.4rem;
+    //     display: grid;
+    //     grid-template-columns: repeat(3, 1fr);
+    //     column-gap: 1.5rem;
+    // }
+    //     &__image {
+    //         // Block model
+    //         width: 100%;
+    //         height: 100%;
+    //         object-fit: contain;
+    //         // Decor
+    //         border-radius: 2.5rem;
+    //     }
+}
+// .price-composition__component {
+//     background-color: gold;
+// }
+
+}
